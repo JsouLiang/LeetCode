@@ -1,4 +1,4 @@
-package tree;
+package Tree;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 /**
- * tree
+ * Tree
  * Created by X-Liang
  * 2017-10-03-09:34
  *
@@ -37,9 +37,9 @@ public class ConvertSortedListToBinarySearchTree {
 //        return root;
 //    }
 //
-//    private ListNode findMiddleNode(ListNode link) {
-//        ListNode fastNode = link;
-//        ListNode slowNode = link;
+//    private ListNode findMiddleNode(ListNode Link) {
+//        ListNode fastNode = Link;
+//        ListNode slowNode = Link;
 //
 //        while (fastNode != null && fastNode.next != null) {
 //            fastNode = fastNode.next.next;

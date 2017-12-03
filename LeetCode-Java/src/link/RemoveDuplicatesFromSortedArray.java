@@ -1,4 +1,4 @@
-package link;
+package Link;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 /**
- * link
+ * Link
  * Created by X-Liang
  * 2017-10-02-12:38
  *

@@ -1,11 +1,11 @@
-package dp;
+package DP;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * dp
+ * DP
  * Created by X-Liang
  * 2017-10-07-17:28
  *

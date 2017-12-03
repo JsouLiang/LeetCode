@@ -1,15 +1,9 @@
-package link;
+package Link;
 
-import com.sun.java.swing.action.NextAction;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.HashMap;
-import java.util.Hashtable;
 
 /**
- * link
+ * Link
  * Created by X-Liang
  * 2017-10-03-12:17
  *
@@ -25,7 +19,7 @@ import java.util.Hashtable;
  * 2. 双向链表的排序就是每个缓存节点最近的使用时间，第一个最近使用的时间距离当前时间最短，最后一个最近使用的时间距离当前时间最长
  * 3. 使用一个 Hashtable 保存每个 key 与之对应的缓存节点，方便根据 key 快速定位需要的缓存节点
  */
-class LinkNode {
+final class LinkNode {
     // 缓存的 key
     int key;
     // 缓存的值
@@ -90,7 +84,7 @@ public class LRUCache {
         if (node == null) {
             return -1;
         }
-        // 刚刚获得 key 对应的 cache，所有该 cache 要保存的 link 头部
+        // 刚刚获得 key 对应的 cache，所有该 cache 要保存的 Link 头部
         this.moveToHead(node);
 
         return node.value;

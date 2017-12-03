@@ -1,11 +1,11 @@
-package link;
+package Link;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
 /**
- * link
+ * Link
  * Created by X-Liang
  * 2017-10-02-08:36
  *

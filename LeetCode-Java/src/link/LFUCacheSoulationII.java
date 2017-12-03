@@ -1,11 +1,10 @@
-package link;
+package Link;
 
-import javax.swing.text.html.HTMLDocument;
 import java.util.HashMap;
 import java.util.LinkedHashSet;
 
 /**
- * link
+ * Link
  * Created by X-Liang
  * 2017-10-03-13:31
  *

@@ -1,11 +1,7 @@
-package tree;
-
-import apple.laf.JRSUIUtils;
-
-import javax.swing.*;
+package Tree;
 
 /**
- * tree
+ * Tree
  * Created by X-Liang
  * 2017-10-02-22:25
  *
@@ -65,13 +61,15 @@ public class ValidateBinaryTree {
     }
 
     private boolean validLeftTree(TreeNode treeNode) {
-        return (treeNode.val > treeNode.left.val && treeNode.val > getLeftSubTreeMaximumValue(treeNode.left)
-                && isValidBST(treeNode.left));
+        return (treeNode.val > treeNode.left.val &&
+                treeNode.val > getLeftSubTreeMaximumValue(treeNode.left) &&
+                isValidBST(treeNode.left));
     }
 
     private boolean validRightTree(TreeNode treeNode) {
-        return (treeNode.val < treeNode.right.val && treeNode.val < getRightSubTreeMinimumValue(treeNode.right)
-                && isValidBST(treeNode.right));
+        return (treeNode.val < treeNode.right.val &&
+                treeNode.val < getRightSubTreeMinimumValue(treeNode.right) &&
+                isValidBST(treeNode.right));
     }
 
     /**

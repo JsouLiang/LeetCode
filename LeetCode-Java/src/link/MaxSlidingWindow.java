@@ -1,15 +1,14 @@
-package link;
+package Link;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
 import java.util.PriorityQueue;
 
 /**
- * link
+ * Link
  * Created by X-Liang
  * 2017-10-02-16:02
  *

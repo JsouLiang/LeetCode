@@ -1,7 +1,7 @@
-package tree;
+package Tree;
 
 /**
- * tree
+ * Tree
  * Created by X-Liang
  * 2017-10-02-22:59
  *

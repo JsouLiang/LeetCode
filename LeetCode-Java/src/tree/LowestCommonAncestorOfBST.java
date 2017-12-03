@@ -1,9 +1,7 @@
-package tree;
-
-import apple.laf.JRSUIUtils;
+package Tree;
 
 /**
- * tree
+ * Tree
  * Created by X-Liang
  * 2017-10-03-10:23
  *
@@ -11,7 +9,7 @@ import apple.laf.JRSUIUtils;
  * 最近公共祖先
  * BST 的最近公共祖先问题
  *
- * Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
+ * Given a binary search Tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.
 
  * According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes v and w as the lowest node in T that has both v and w as descendants (where we allow a node to be a descendant of itself).”
 
