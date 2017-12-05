@@ -88,7 +88,7 @@ public class TreeOptions {
             return getFirstNodeOfInOrder(node.getRight());  // 返回右子树的第一个节点
         } else {    // 往父节点走，直到某个父节点是作为左孩子存在，那么返回这个父节点的父节点
             while (node.getParent() != null &&
-                    node.getParent().getRight() == node) {   
+                    node.getParent().getRight() == node) {
                 node = node.getParent();
             }
             // node.parent == null || node is left child of its parent
