@@ -28,6 +28,14 @@ int hashFunc(int key, int hashTableLength) {
     return key % hashTableLength;
 }
 
+int string_hash_func(string val, int hash_table_length) {
+    int sum = 0;
+    for (int i = 0; i < val.length(); i++) {
+        sum += val[i];
+    }
+    return sum % hash_table_length;
+}
+
 void insert(ListNode *hashTable[], ListNode *node, int tableLen) {
     int hashKey = hashFunc(node->val, tableLen);
     node->next = hashTable[hashKey];

@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="" />
+    <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../LeetCode-C:C++/3. 二叉树与图/1. 路径和.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode-C:C++/3. 二叉树与图/2. 最近的公共祖先.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode-C:C++/3. 二叉树与图/3.二叉树转链表.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode-C:C++/3. 二叉树与图/4. 右侧观察二叉树.cpp" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/../LeetCode-C:C++/3. 二叉树与图/5.拓扑排序.cpp" afterPath="" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -49,8 +55,8 @@
       <file leaf-file-name="ValidateBinaryTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Tree/ValidateBinaryTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-387">
-              <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+            <state relative-caret-position="816">
+              <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -206,7 +212,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="width" value="1437" />
     <option name="height" value="900" />
   </component>
@@ -773,7 +779,7 @@
       <workItem from="1512402239084" duration="3131000" />
       <workItem from="1513085401680" duration="102000" />
       <workItem from="1513085581417" duration="453000" />
-      <workItem from="1513402518322" duration="364000" />
+      <workItem from="1513402518322" duration="1337000" />
     </task>
     <servers />
   </component>
@@ -810,7 +816,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71082000" />
+    <option name="totallyTimeSpent" value="72055000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -822,7 +828,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1437" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1437" height="900" extended-state="1" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32992327" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -1292,8 +1298,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Tree/ValidateBinaryTree.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-387">
-          <caret line="42" column="16" lean-forward="false" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="16" />
+        <state relative-caret-position="816">
+          <caret line="48" column="19" lean-forward="false" selection-start-line="48" selection-start-column="19" selection-end-line="48" selection-end-column="19" />
           <folding />
         </state>
       </provider>
