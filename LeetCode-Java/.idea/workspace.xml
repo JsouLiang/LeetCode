@@ -1,84 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Graph/IsGraphBipartie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/MinStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Stack/ReverseStack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Backpacker$Backpacker01.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Backpacker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Fib$Solution1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Fib.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/HouseRobber.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/LongestIncreasingSubsequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/NFactorial$Solution1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/NFactorial.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Solution1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Solution2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/Solution3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/UniquePaths.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/UniquePathsII$ToDo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/dp/UniquePathsII.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/AddTomNumbers.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/LFUCacheSoulationII.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/LRUCache.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/LinkNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/MaxSlidingWindow.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/RemoveDuplicatesFromSortedArray.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/SlotionClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/SortColors.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/link/ThreeSum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/ConvertSortedListToBinarySearchTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/InvertTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/ListNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/LowestCommonAncestorOfBST.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/LowestCommonAncestorOfBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/MainClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/MaximumDepthOfBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/TreeNode.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Algorithm/tree/ValidateBinaryTree.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Backpacker$Backpacker01.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Backpacker$Backpacker01.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Backpacker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Backpacker.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib$Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib$Solution1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/HouseRobber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/HouseRobber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/LongestIncreasingSubsequence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/LongestIncreasingSubsequence.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial$Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial$Solution1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Solution1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Solution2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Solution2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Solution3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Solution3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII$ToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII$ToDo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/AddTomNumbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/AddTomNumbers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/LFUCacheSoulationII.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/LFUCacheSoulationII.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/LRUCache.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/LRUCache.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/LinkNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/LinkNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/LinkedListOption.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/LinkedListOption.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/MaxSlidingWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/MaxSlidingWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/RemoveDuplicatesFromSortedArray.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/RemoveDuplicatesFromSortedArray.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/SlotionClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/SlotionClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/SortColors.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/SortColors.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/ThreeSum.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/ThreeSum.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/ConvertSortedListToBinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/ConvertSortedListToBinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/InvertTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/InvertTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/ListNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/ListNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/LowestCommonAncestorOfBST.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/LowestCommonAncestorOfBST.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/LowestCommonAncestorOfBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/LowestCommonAncestorOfBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/MaximumDepthOfBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/MaximumDepthOfBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/ValidateBinaryTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/ValidateBinaryTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/二分查找/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/二分查找/BinarySearch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/暴力搜索/Combination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/暴力搜索/Combination.class" afterDir="false" />
-    </list>
+    <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -137,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Stack/ReverseStack.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+            <state relative-caret-position="142">
+              <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
               <folding>
                 <element signature="e#138#139#0" expanded="true" />
                 <element signature="e#172#173#0" expanded="true" />
@@ -769,7 +692,7 @@
       <workItem from="1527511836715" duration="320000" />
       <workItem from="1540542288812" duration="111000" />
       <workItem from="1547534792592" duration="14000" />
-      <workItem from="1555162501574" duration="1716000" />
+      <workItem from="1555162501574" duration="2428000" />
     </task>
     <servers />
   </component>
@@ -806,7 +729,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74700000" />
+    <option name="totallyTimeSpent" value="75412000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -821,7 +744,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21530758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -832,7 +755,7 @@
       <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5028612" side_tool="true" weight="0.39855072" />
       <window_info anchor="bottom" id="Java Enterprise" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32920793" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" weight="0.39820743" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" sideWeight="0.49713877" visible="true" weight="0.39727724" />
       <window_info anchor="bottom" id="Version Control" order="4" />
       <window_info anchor="bottom" id="Spring" order="5" />
       <window_info anchor="bottom" id="Terminal" order="6" weight="0.32992327" />
@@ -1142,8 +1065,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Stack/ReverseStack.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="5" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
+        <state relative-caret-position="142">
+          <caret line="32" column="45" selection-start-line="32" selection-start-column="45" selection-end-line="32" selection-end-column="45" />
           <folding>
             <element signature="e#138#139#0" expanded="true" />
             <element signature="e#172#173#0" expanded="true" />
