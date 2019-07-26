@@ -4,7 +4,7 @@ import 二分查找.BinarySearch;
 
 import java.util.*;
 
-public class BinarySearchTree<E> {
+public class BinarySearchTree<E> extends BinaryTree {
 
     public static interface Visitor<E> {
         void visite(E element);
@@ -100,10 +100,16 @@ public class BinarySearchTree<E> {
 
     }
 
+    protected Node<E> createNode(E element, Node<E> parent) {
+        return new Node<>(parent, element);
+    }
+
     public void add(E element) {
         if (root == null) {
-            root = new Node<>(null, element);
+            root = createNode(element, null);
             size++;
+            // 新添加了一个根节点
+            afterAddAction(root);
             return;
         }
         Node<E> currentNode = root;
@@ -123,13 +129,21 @@ public class BinarySearchTree<E> {
             }
         }
 
-        Node insertedNode = new Node(parentNode, element);
+        Node insertedNode = createNode(element, parentNode);
         if (comparedValue > 0) {
             parentNode.left = insertedNode;
         } else if (comparedValue < 0) {
             parentNode.right = insertedNode;
         }
+        // 新添加节点之后的处理
+        afterAddAction(insertedNode);
     }
+
+    /**
+     * 添加node 节点之后对树的操作
+     * @param node 新添加的节点
+     */
+    protected void afterAddAction(Node<E> node) {}
 
     /**
      * 前序遍历
@@ -272,7 +286,7 @@ public class BinarySearchTree<E> {
         }
     }
 
-    private static class Node<E> {
+    protected static class Node<E> {
         E element;
         Node<E> left;
         Node<E> right;
