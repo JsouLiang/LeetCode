@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree/BinaryTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/LeetCode746.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinarySearchTree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree/BinarySearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tree/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tree/TreeNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -349,7 +343,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TreeNode">
+  <component name="RunManager" selected="Application.LeetCode746">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -370,13 +364,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ReverseStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stack.ReverseStack" />
+    <configuration name="LeetCode746" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.LeetCode746" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Stack.*" />
+          <option name="PATTERN" value="dp.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -465,19 +459,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ReverseStack" />
       <item itemvalue="Application.ScoreOfParentheses" />
       <item itemvalue="Application.BinarySearchTree" />
       <item itemvalue="Application.TreeNode" />
       <item itemvalue="JUnit.StackTests.testScoreOfParentheses" />
+      <item itemvalue="Application.LeetCode746" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode746" />
         <item itemvalue="Application.TreeNode" />
         <item itemvalue="Application.BinarySearchTree" />
         <item itemvalue="JUnit.StackTests.testScoreOfParentheses" />
         <item itemvalue="Application.ScoreOfParentheses" />
-        <item itemvalue="Application.ReverseStack" />
       </list>
     </recent_temporary>
   </component>
@@ -524,7 +518,8 @@
       <workItem from="1557660222991" duration="4848000" />
       <workItem from="1564127794879" duration="112000" />
       <workItem from="1564127955294" duration="392000" />
-      <workItem from="1564128411980" duration="5961000" />
+      <workItem from="1564128411980" duration="6170000" />
+      <workItem from="1564367288974" duration="3305000" />
     </task>
     <servers />
   </component>
@@ -577,7 +572,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
@@ -622,7 +619,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
-          <line>155</line>
+          <line>159</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
       </breakpoints>
