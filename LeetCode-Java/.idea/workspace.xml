@@ -2,27 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode1025.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode121.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode198.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode303.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib$Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib$Solution1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/LeetCode746.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/LongestIncreasingSubsequence.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/MainClass.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial$Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial$Solution1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII$ToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII$ToDo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/Fib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/Fib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/LeetCode746.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode746.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/LongestIncreasingSubsequence.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/NFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/NFactorial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/UniquePaths.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dp/UniquePathsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/UniquePathsII.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -357,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode303">
+  <component name="RunManager" selected="Application.TreeNode">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -478,11 +459,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.TreeNode" />
         <item itemvalue="Application.LeetCode303" />
         <item itemvalue="Application.LeetCode121" />
         <item itemvalue="Application.LeetCode198" />
         <item itemvalue="Application.LeetCode746" />
-        <item itemvalue="Application.TreeNode" />
       </list>
     </recent_temporary>
   </component>
@@ -531,7 +512,7 @@
       <workItem from="1564127955294" duration="392000" />
       <workItem from="1564128411980" duration="6170000" />
       <workItem from="1564367288974" duration="26916000" />
-      <workItem from="1564485992733" duration="5071000" />
+      <workItem from="1564485992733" duration="8136000" />
     </task>
     <servers />
   </component>
@@ -621,11 +602,6 @@
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
-          <line>159</line>
-          <option name="timeStamp" value="51" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode198.java</url>
           <line>40</line>
           <option name="timeStamp" value="52" />
@@ -634,6 +610,11 @@
           <url>file://$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode303.java</url>
           <line>63</line>
           <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
+          <line>212</line>
+          <option name="timeStamp" value="61" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

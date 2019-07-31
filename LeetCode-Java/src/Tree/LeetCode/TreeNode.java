@@ -1,5 +1,7 @@
 package Tree.LeetCode;
 
+import jdk.nashorn.api.tree.Tree;
+
 import java.util.*;
 
 public class TreeNode {
@@ -136,8 +138,17 @@ public class TreeNode {
         }
         return pathSum(root, 0, sum);
     }
+    private boolean pathSum(TreeNode node, int currentValue, int sum) {
+        if (node == null) {
+            return false;
+        }
+        currentValue += node.val;
+        if (currentValue == sum && node.left == null && node.right == null) return true;
+        return pathSum(node.left, currentValue, sum) || pathSum(node.right, currentValue, sum);
+    }
 
     /**
+     * 106. 从中序与后序遍历序列构造二叉树
      * 根据一棵树的中序遍历与后序遍历构造二叉树。
      *
      * 注意:
@@ -154,29 +165,51 @@ public class TreeNode {
      *   9  20
      *     /  \
      *    15   7
+     *
+     * @implNote 后序遍历的最后一个节点，一定是本次递归中一颗树的根节点；
+     * 从中序遍历数组中找到这个根节点，节点左边一定是左子树，右边是右子树
      */
-    public TreeNode buildTree(int[] inorder, int[] postorder) {
-        return null;
+    public static TreeNode buildTree(int[] inorder, int[] postorder) {
+        int inLength = inorder.length;
+        int posLength = postorder.length;
+        assert inLength == posLength;
+        if (inLength == 0) {
+            return null;
+        }
+        if (inLength == 1) {
+            return new TreeNode(inorder[0]);
+        }
+
+        // 1. 找到根节点
+        int rootValue = postorder[posLength - 1];
+        // 2. 从中序遍历中找到左子树和右子树的分界点
+        int rootIndex = -1;
+        for (int i = 0; i < inLength; i++) {
+            if (inorder[i] == rootValue) {
+                rootIndex = i;
+                break;
+            }
+
+        }
+
+        TreeNode rootNode = new TreeNode(rootValue);
+        rootNode.left = buildTree(Arrays.copyOfRange(inorder, 0, rootIndex), Arrays.copyOfRange(postorder, 0, rootIndex));
+        rootNode.right = buildTree(Arrays.copyOfRange(inorder, rootIndex + 1, inLength), Arrays.copyOfRange(postorder, rootIndex, posLength - 1));
+        return rootNode;
     }
 
-    private boolean pathSum(TreeNode node, int currentValue, int sum) {
-        if (node == null) {
-            return false;
-        }
-        currentValue += node.val;
-        if (currentValue == sum && node.left == null && node.right == null) return true;
-        return pathSum(node.left, currentValue, sum) || pathSum(node.right, currentValue, sum);
-    }
+
 
     public static void main(String[] args) {
-        Integer[] values = {-2, null, -3};
-        ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(values));
+//        Integer[] values = {-2, null, -3};
+//        ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(values));
 //        ArrayList<Integer> values = new ArrayList<>() {1,  2, 3};
 
-        TreeNode treeNode = TreeNode.createTreeWith(arrayList);
+//        TreeNode treeNode = TreeNode.createTreeWith(arrayList);
 //        treeNode.levelOrder(treeNode);
 //        int depth = treeNode.maxDepth();
-        boolean res = treeNode.hasPathSum(treeNode, -5);
-        System.out.println(res);
+//        boolean res = treeNode.hasPathSum(treeNode, -5);
+        TreeNode node = TreeNode.buildTree(new int[]{9,3,15,20,7}, new int[] {9,15,7,20,3});
+        System.out.println(node);
     }
 }
