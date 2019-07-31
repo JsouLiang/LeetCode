@@ -111,6 +111,7 @@ public class TreeNode {
      * @return
      */
     public boolean isSymmetric(TreeNode root) {
+        // TODO:
         return true;
     }
 
@@ -198,18 +199,60 @@ public class TreeNode {
         return rootNode;
     }
 
-
+    /**
+     * 938. 二叉搜索树的范围和
+     * 给定二叉搜索树的根结点 root，返回 L 和 R（含）之间的所有结点的值的和。
+     *
+     * 二叉搜索树保证具有唯一的值。
+     *
+     * 示例 1：
+     *
+     * 输入：root = [10,5,15,3,7,null,18], L = 7, R = 15
+     * 输出：32
+     * 示例 2：
+     *
+     * 输入：root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
+     * 输出：23
+     */
+    public static int rangeSumBST(TreeNode root, int L, int R) {
+        if (root == null) {
+            return 0;
+        }
+        if (root.left == null && root.right == null) {
+            if (root.val >= L || root.val <= R) {
+                return root.val;
+            }
+            return 0;
+        }
+        int sum = 0;
+        // 1. 当前节点的值在范围内则 sum 加上当前值
+        if (root.val >= L && root.val <= R) {
+            sum += root.val;
+        }
+        // 2. 如果当前节点值比最小值要大，则表示可以往左子树中遍历，寻找最小值边界
+        // 递归结束后，sum 加上左子树的返回值
+        if (root.val > L) {
+            sum += rangeSumBST(root.left, L, R);
+        }
+        // 3. 如果当前节点值比最大值要小，则标书可以往右子树中寻找右边界
+        if (root.val < R) {
+            sum += rangeSumBST(root.right, L, R);
+        }
+        return sum;
+    }
 
     public static void main(String[] args) {
-//        Integer[] values = {-2, null, -3};
-//        ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(values));
+        Integer[] values = {10,5,15,3,7,null,18};
+        ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(values));
 //        ArrayList<Integer> values = new ArrayList<>() {1,  2, 3};
 
 //        TreeNode treeNode = TreeNode.createTreeWith(arrayList);
 //        treeNode.levelOrder(treeNode);
 //        int depth = treeNode.maxDepth();
 //        boolean res = treeNode.hasPathSum(treeNode, -5);
-        TreeNode node = TreeNode.buildTree(new int[]{9,3,15,20,7}, new int[] {9,15,7,20,3});
-        System.out.println(node);
+//        TreeNode node = TreeNode.buildTree(new int[]{9,3,15,20,7}, new int[] {9,15,7,20,3});
+        TreeNode root = TreeNode.createTreeWith(arrayList);
+        TreeNode.rangeSumBST(root, 7, 15);
+        System.out.println("");
     }
 }
