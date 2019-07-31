@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
+      <change afterPath="$PROJECT_DIR$/src/位运算/easy/LeetCode136.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -338,7 +338,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.TreeNode">
+  <component name="RunManager" selected="Application.LeetCode136">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -352,6 +352,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dp.leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode136" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="位运算.easy.LeetCode136" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="位运算.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -375,20 +389,6 @@
     </configuration>
     <configuration name="LeetCode303" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode303" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="dp.leetcode.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeetCode746" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode746" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -452,18 +452,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TreeNode" />
-      <item itemvalue="Application.LeetCode746" />
       <item itemvalue="Application.LeetCode198" />
       <item itemvalue="Application.LeetCode121" />
       <item itemvalue="Application.LeetCode303" />
+      <item itemvalue="Application.LeetCode136" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode136" />
         <item itemvalue="Application.TreeNode" />
         <item itemvalue="Application.LeetCode303" />
         <item itemvalue="Application.LeetCode121" />
         <item itemvalue="Application.LeetCode198" />
-        <item itemvalue="Application.LeetCode746" />
       </list>
     </recent_temporary>
   </component>
@@ -513,7 +513,7 @@
       <workItem from="1564128411980" duration="6170000" />
       <workItem from="1564367288974" duration="26916000" />
       <workItem from="1564485992733" duration="8380000" />
-      <workItem from="1564572240128" duration="1423000" />
+      <workItem from="1564572240128" duration="2565000" />
     </task>
     <servers />
   </component>
@@ -614,18 +614,23 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
-          <line>251</line>
+          <line>255</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
-          <line>236</line>
+          <line>240</line>
           <option name="timeStamp" value="62" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
           <line>220</line>
           <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/位运算/easy/LeetCode136.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="64" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
