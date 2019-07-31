@@ -1,11 +1,7 @@
-package DP;
-
+package dp;
 /**
  * DP
- * Created by X-Liang
- * 2017-10-07-17:22
- *
- * @Description: n！
+ * n 阶乘
  */
 public class NFactorial {
     private static int[] results;

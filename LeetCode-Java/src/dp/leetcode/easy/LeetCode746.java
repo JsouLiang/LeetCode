@@ -1,6 +1,4 @@
-package dp;
-
-import java.lang.reflect.Array;
+package dp.leetcode.easy;
 
 /**
  * 746. 使用最小花费爬楼梯

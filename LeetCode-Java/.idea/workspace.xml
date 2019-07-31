@@ -2,9 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/dp/LeetCode746.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode1025.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode121.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode198.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode303.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib$Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib$Solution1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/Fib.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/LeetCode746.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/LongestIncreasingSubsequence.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/MainClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/MainClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial$Solution1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial$Solution1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/NFactorial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII$ToDo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII$ToDo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/dp/UniquePathsII.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/Fib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/Fib.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/LeetCode746.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode746.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/LongestIncreasingSubsequence.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/NFactorial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/NFactorial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/UniquePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/UniquePaths.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dp/UniquePathsII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dp/UniquePathsII.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,10 +64,6 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
-  </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="1440" />
-    <option name="height" value="900" />
   </component>
   <component name="ProjectId" id="1OXeX24KTo5YMFzp7b4riNPWckn" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -343,20 +357,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode746">
+  <component name="RunManager" selected="Application.LeetCode303">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearchTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Tree.BinarySearchTree.BinarySearchTree" />
+    <configuration name="LeetCode121" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode121" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Tree.BinarySearchTree.*" />
+          <option name="PATTERN" value="dp.leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode198" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode198" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.leetcode.easy.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode303" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode303" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dp.leetcode.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -365,26 +407,12 @@
       </method>
     </configuration>
     <configuration name="LeetCode746" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.LeetCode746" />
+      <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode746" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ScoreOfParentheses" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Stack.ScoreOfParentheses" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Stack.*" />
+          <option name="PATTERN" value="dp.leetcode.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -408,23 +436,6 @@
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StackTests.testScoreOfParentheses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="LeetCode" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Stack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Stack" />
-      <option name="MAIN_CLASS_NAME" value="Stack.StackTests" />
-      <option name="METHOD_NAME" value="testScoreOfParentheses" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -459,19 +470,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ScoreOfParentheses" />
-      <item itemvalue="Application.BinarySearchTree" />
       <item itemvalue="Application.TreeNode" />
-      <item itemvalue="JUnit.StackTests.testScoreOfParentheses" />
       <item itemvalue="Application.LeetCode746" />
+      <item itemvalue="Application.LeetCode198" />
+      <item itemvalue="Application.LeetCode121" />
+      <item itemvalue="Application.LeetCode303" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode303" />
+        <item itemvalue="Application.LeetCode121" />
+        <item itemvalue="Application.LeetCode198" />
         <item itemvalue="Application.LeetCode746" />
         <item itemvalue="Application.TreeNode" />
-        <item itemvalue="Application.BinarySearchTree" />
-        <item itemvalue="JUnit.StackTests.testScoreOfParentheses" />
-        <item itemvalue="Application.ScoreOfParentheses" />
       </list>
     </recent_temporary>
   </component>
@@ -519,7 +530,8 @@
       <workItem from="1564127794879" duration="112000" />
       <workItem from="1564127955294" duration="392000" />
       <workItem from="1564128411980" duration="6170000" />
-      <workItem from="1564367288974" duration="3305000" />
+      <workItem from="1564367288974" duration="26916000" />
+      <workItem from="1564485992733" duration="5071000" />
     </task>
     <servers />
   </component>
@@ -554,15 +566,6 @@
     <history-entry file="StackTests_testScoreOfParentheses - 2019.04.26 at 20h 15m 46s.xml">
       <configuration name="StackTests.testScoreOfParentheses" configurationId="JUnit" />
     </history-entry>
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -621,6 +624,16 @@
           <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
           <line>159</line>
           <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode198.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dp/leetcode/easy/LeetCode303.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="58" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
