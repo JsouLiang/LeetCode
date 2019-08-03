@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/liang.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link/leetcode/easy/LeetCode206.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link/leetcode/easy/ListNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Link/leetcode/medium/LeetCode92.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/ReadMe.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode209.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode438.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode239.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/medium/LeetCode567.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/位运算/easy/LeetCode136.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/位运算/easy/LeetCode136.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/easy/LeetCode206.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/easy/LeetCode206.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/medium/LeetCode92.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/medium/LeetCode92.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,282 +42,15 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>val</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
-    <dirStrings>
-      <dir>$PROJECT_DIR$/src/图</dir>
-    </dirStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectId" id="1OXeX24KTo5YMFzp7b4riNPWckn" />
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>ActionScript specificJavaScript</id>
-          </State>
-          <State>
-            <id>Android</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Correctness &gt; Messages</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Internationalization</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Lint</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Security</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability</id>
-          </State>
-          <State>
-            <id>Android &gt; Lint &gt; Usability &gt; Icons</id>
-          </State>
-          <State>
-            <id>Android Lint for Kotlin</id>
-          </State>
-          <State>
-            <id>Ant inspections</id>
-          </State>
-          <State>
-            <id>Batch Applications Issues</id>
-          </State>
-          <State>
-            <id>CFML</id>
-          </State>
-          <State>
-            <id>CSS</id>
-          </State>
-          <State>
-            <id>Class structureJava</id>
-          </State>
-          <State>
-            <id>Code quality toolsCSS</id>
-          </State>
-          <State>
-            <id>Code quality toolsJavaScript</id>
-          </State>
-          <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>CoffeeScript</id>
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>Cucumber</id>
-          </State>
-          <State>
-            <id>Dart</id>
-          </State>
-          <State>
-            <id>Error handlingJava</id>
-          </State>
-          <State>
-            <id>Faces Model</id>
-          </State>
-          <State>
-            <id>Flow type checkerJavaScript</id>
-          </State>
-          <State>
-            <id>FreeMarker inspections</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>GeneralCoffeeScript</id>
-          </State>
-          <State>
-            <id>GeneralJavaScript</id>
-          </State>
-          <State>
-            <id>Google Web Toolkit issues</id>
-          </State>
-          <State>
-            <id>GrailsGroovy</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>Hibernate Issues</id>
-          </State>
-          <State>
-            <id>ImportsJava</id>
-          </State>
-          <State>
-            <id>Inheritance issuesJava</id>
-          </State>
-          <State>
-            <id>Internationalization issues</id>
-          </State>
-          <State>
-            <id>Internationalization issuesJava</id>
-          </State>
-          <State>
-            <id>Invalid elementsCSS</id>
-          </State>
-          <State>
-            <id>J2ME issuesJava</id>
-          </State>
-          <State>
-            <id>JSON</id>
-          </State>
-          <State>
-            <id>JSP Inspections</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>Java 8Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>Java interop issuesKotlin</id>
-          </State>
-          <State>
-            <id>Java language level migration aidsJava</id>
-          </State>
-          <State>
-            <id>JavaFX</id>
-          </State>
-          <State>
-            <id>JavaScript</id>
-          </State>
-          <State>
-            <id>Javadoc issuesJava</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Manifest</id>
-          </State>
-          <State>
-            <id>OSGi</id>
-          </State>
-          <State>
-            <id>OtherGroovy</id>
-          </State>
-          <State>
-            <id>Pages Navigation Model</id>
-          </State>
-          <State>
-            <id>Plugin DevKit</id>
-          </State>
-          <State>
-            <id>Portability issuesJava</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsGroovy</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>Properties Files</id>
-          </State>
-          <State>
-            <id>Properties FilesJava</id>
-          </State>
-          <State>
-            <id>RELAX NG</id>
-          </State>
-          <State>
-            <id>RESTful Web Service</id>
-          </State>
-          <State>
-            <id>Resource management issuesJava</id>
-          </State>
-          <State>
-            <id>SQL</id>
-          </State>
-          <State>
-            <id>Sass/SCSS</id>
-          </State>
-          <State>
-            <id>SetupSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>Spring</id>
-          </State>
-          <State>
-            <id>Spring BootSpring</id>
-          </State>
-          <State>
-            <id>Spring CoreSpring</id>
-          </State>
-          <State>
-            <id>Struts</id>
-          </State>
-          <State>
-            <id>Struts 1Struts</id>
-          </State>
-          <State>
-            <id>Struts 2Struts</id>
-          </State>
-          <State>
-            <id>TestNGJava</id>
-          </State>
-          <State>
-            <id>Threading issuesJava</id>
-          </State>
-          <State>
-            <id>TypeScript</id>
-          </State>
-          <State>
-            <id>UI Form Problems</id>
-          </State>
-          <State>
-            <id>Validity issuesGroovy</id>
-          </State>
-          <State>
-            <id>Velocity inspections</id>
-          </State>
-          <State>
-            <id>Web Services</id>
-          </State>
-          <State>
-            <id>XML</id>
-          </State>
-          <State>
-            <id>XMLSpring CoreSpring</id>
-          </State>
-          <State>
-            <id>XPath</id>
-          </State>
-        </expanded-state>
-      </profile-state>
-    </entry>
-  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -328,7 +67,7 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -342,20 +81,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode92">
+  <component name="RunManager" selected="Application.LeetCode3">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode136" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="位运算.easy.LeetCode136" />
+    <configuration name="LeetCode3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.easy.LeetCode3" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="位运算.easy.*" />
+          <option name="PATTERN" value="SlidingWindow.LeetCode.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -363,13 +102,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode206" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Link.leetcode.easy.LeetCode206" />
+    <configuration name="LeetCode438" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.easy.LeetCode438" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Link.leetcode.easy.*" />
+          <option name="PATTERN" value="SlidingWindow.LeetCode.easy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -377,13 +116,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode303" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dp.leetcode.easy.LeetCode303" />
+    <configuration name="LeetCode567" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.medium.LeetCode567" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dp.leetcode.easy.*" />
+          <option name="PATTERN" value="SlidingWindow.LeetCode.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -456,18 +195,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TreeNode" />
-      <item itemvalue="Application.LeetCode303" />
-      <item itemvalue="Application.LeetCode136" />
-      <item itemvalue="Application.LeetCode206" />
       <item itemvalue="Application.LeetCode92" />
+      <item itemvalue="Application.LeetCode567" />
+      <item itemvalue="Application.LeetCode438" />
+      <item itemvalue="Application.LeetCode3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LeetCode92" />
-        <item itemvalue="Application.LeetCode206" />
-        <item itemvalue="Application.LeetCode136" />
+        <item itemvalue="Application.LeetCode3" />
+        <item itemvalue="Application.LeetCode438" />
+        <item itemvalue="Application.LeetCode567" />
         <item itemvalue="Application.TreeNode" />
-        <item itemvalue="Application.LeetCode303" />
+        <item itemvalue="Application.LeetCode92" />
       </list>
     </recent_temporary>
   </component>
@@ -518,7 +257,9 @@
       <workItem from="1564367288974" duration="26916000" />
       <workItem from="1564485992733" duration="8380000" />
       <workItem from="1564572240128" duration="5004000" />
-      <workItem from="1564645706499" duration="4030000" />
+      <workItem from="1564645706499" duration="5517000" />
+      <workItem from="1564712817075" duration="8665000" />
+      <workItem from="1564806187414" duration="5664000" />
     </task>
     <servers />
   </component>
@@ -571,6 +312,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="二叉搜索树-BinarySearchTree 数据结构" />
     <option name="LAST_COMMIT_MESSAGE" value="二叉搜索树-BinarySearchTree 数据结构" />
   </component>
@@ -619,7 +361,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
-          <line>255</line>
+          <line>303</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
@@ -637,12 +379,40 @@
           <line>47</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java</url>
+          <line>278</line>
+          <option name="timeStamp" value="75" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindow/LeetCode/medium/LeetCode567.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="76" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindow/LeetCode/medium/LeetCode567.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="77" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindow/LeetCode/medium/LeetCode567.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="78" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode438.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="79" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode_Java$StackTests_testScoreOfParentheses.ic" NAME="StackTests.testScoreOfParentheses Coverage Results" MODIFIED="1556280415111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Stack.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LeetCode_Java$LeetCode567.ic" NAME="LeetCode567 Coverage Results" MODIFIED="1564725105428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>SlidingWindow.LeetCode.medium.*</FILTER>
     </SUITE>
   </component>
   <component name="debuggerHistoryManager">
