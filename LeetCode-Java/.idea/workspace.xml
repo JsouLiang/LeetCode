@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/ReadMe.markdown" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode209.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode438.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode239.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/medium/LeetCode567.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/easy/LeetCode206.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/easy/LeetCode206.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/medium/LeetCode92.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/link/leetcode/medium/LeetCode92.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindow/LeetCode/hard/LeetCode76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindow/LeetCode/hard/LeetCode76.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode239.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode239.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -81,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode3">
+  <component name="RunManager" selected="Application.LeetCode76">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -130,13 +122,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode92" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Link.leetcode.medium.LeetCode92" />
+    <configuration name="LeetCode76" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.hard.LeetCode76" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Link.leetcode.medium.*" />
+          <option name="PATTERN" value="SlidingWindow.LeetCode.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,18 +187,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.TreeNode" />
-      <item itemvalue="Application.LeetCode92" />
       <item itemvalue="Application.LeetCode567" />
       <item itemvalue="Application.LeetCode438" />
       <item itemvalue="Application.LeetCode3" />
+      <item itemvalue="Application.LeetCode76" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode76" />
         <item itemvalue="Application.LeetCode3" />
         <item itemvalue="Application.LeetCode438" />
         <item itemvalue="Application.LeetCode567" />
         <item itemvalue="Application.TreeNode" />
-        <item itemvalue="Application.LeetCode92" />
       </list>
     </recent_temporary>
   </component>
@@ -259,7 +251,7 @@
       <workItem from="1564572240128" duration="5004000" />
       <workItem from="1564645706499" duration="5517000" />
       <workItem from="1564712817075" duration="8665000" />
-      <workItem from="1564806187414" duration="5664000" />
+      <workItem from="1564806187414" duration="11034000" />
     </task>
     <servers />
   </component>
@@ -404,6 +396,16 @@
           <line>72</line>
           <option name="timeStamp" value="79" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="98" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -414,30 +416,6 @@
     <SUITE FILE_PATH="coverage/LeetCode_Java$LeetCode567.ic" NAME="LeetCode567 Coverage Results" MODIFIED="1564725105428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SlidingWindow.LeetCode.medium.*</FILTER>
     </SUITE>
-  </component>
-  <component name="debuggerHistoryManager">
-    <expressions id="evaluateExpression">
-      <expression>
-        <expression-string>(int)Math.ceil(1/2.0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Math.ceil(1/2.0)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>i/2</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-      <expression>
-        <expression-string>Character.forDigit(value, 10)</expression-string>
-        <language-id>JAVA</language-id>
-        <evaluation-mode>EXPRESSION</evaluation-mode>
-      </expression>
-    </expressions>
   </component>
   <component name="masterDetails">
     <states>
