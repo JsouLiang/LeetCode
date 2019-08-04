@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/easy/LeetCode219.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/sort/leetCode/medium/LeetCode912.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/暴力搜索/全排列/LeetCode31.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindow/LeetCode/hard/LeetCode76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindow/LeetCode/hard/LeetCode76.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode239.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode239.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindow/LeetCode/hard/LeetCode76.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -251,7 +252,7 @@
       <workItem from="1564572240128" duration="5004000" />
       <workItem from="1564645706499" duration="5517000" />
       <workItem from="1564712817075" duration="8665000" />
-      <workItem from="1564806187414" duration="11034000" />
+      <workItem from="1564806187414" duration="14175000" />
     </task>
     <servers />
   </component>
