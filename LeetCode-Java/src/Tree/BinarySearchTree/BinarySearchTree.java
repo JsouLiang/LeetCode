@@ -1,7 +1,5 @@
 package Tree.BinarySearchTree;
 
-import 二分查找.BinarySearch;
-
 import java.util.*;
 
 public class BinarySearchTree<E> extends BinaryTree {

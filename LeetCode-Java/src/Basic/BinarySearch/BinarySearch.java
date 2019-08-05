@@ -1,4 +1,4 @@
-package 二分查找;
+package Basic.BinarySearch;
 
 /**
  * 二分查找
@@ -22,7 +22,6 @@ public class BinarySearch {
          * 2. b - a = len([a, b))
          * 3. [a, a) = empty range
          */
-
         // target ⍷ [left, right)
         int left = 0;
         int right = arr.length;
