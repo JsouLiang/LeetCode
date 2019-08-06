@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode704.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Basic/queue/LeetCode622.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/string/LeetCode28.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/string/LeetCode28.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree$Node.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree$Node.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/BinarySearchTree/BinarySearchTree.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/二分查找/BinarySearch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree/BinarySearchTree/BinarySearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/BinarySearchTree/BinarySearchTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/二分查找/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/BinarySearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode704.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode704.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/queue/LeetCode622.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/queue/LeetCode622.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode704.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode704.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -78,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode622">
+  <component name="RunManager" selected="Application.LeetCode704">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -113,20 +108,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode438" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.easy.LeetCode438" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SlidingWindow.LeetCode.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="LeetCode622" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Basic.queue.LeetCode622" />
       <module name="LeetCode" />
@@ -134,6 +115,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Basic.queue.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode704" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode704" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Basic.BinarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -191,19 +186,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LeetCode438" />
       <item itemvalue="Application.LeetCode3" />
       <item itemvalue="Application.LeetCode76" />
       <item itemvalue="Application.LeetCode28" />
       <item itemvalue="Application.LeetCode622" />
+      <item itemvalue="Application.LeetCode704" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode704" />
         <item itemvalue="Application.LeetCode622" />
         <item itemvalue="Application.LeetCode28" />
         <item itemvalue="Application.LeetCode76" />
         <item itemvalue="Application.LeetCode3" />
-        <item itemvalue="Application.LeetCode438" />
       </list>
     </recent_temporary>
   </component>
@@ -256,7 +251,7 @@
       <workItem from="1564572240128" duration="5004000" />
       <workItem from="1564645706499" duration="5517000" />
       <workItem from="1564712817075" duration="8665000" />
-      <workItem from="1564806187414" duration="18710000" />
+      <workItem from="1564806187414" duration="20004000" />
     </task>
     <servers />
   </component>
@@ -423,7 +418,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Basic/queue/LeetCode622.java</url>
-          <line>121</line>
+          <line>126</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
       </breakpoints>
