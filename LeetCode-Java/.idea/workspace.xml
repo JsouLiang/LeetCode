@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode34.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode35.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode34.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode35.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/BinarySearch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/BinarySearch.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode704.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode704.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/queue/LeetCode622.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/queue/LeetCode622.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Basic/BinarySearch/BinarySearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/BinarySearch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode704.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode704.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -12,6 +17,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="293" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -73,20 +81,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode704">
+  <component name="RunManager" selected="Application.LeetCode34">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode28" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.string.LeetCode28" />
+    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.BinarySearch" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.string.*" />
+          <option name="PATTERN" value="Basic.BinarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,13 +102,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.easy.LeetCode3" />
+    <configuration name="LeetCode34" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode34" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SlidingWindow.LeetCode.easy.*" />
+          <option name="PATTERN" value="Basic.BinarySearch.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode35" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode35" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Basic.BinarySearch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,20 +151,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Basic.BinarySearch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeetCode76" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindow.LeetCode.hard.LeetCode76" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SlidingWindow.LeetCode.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,19 +194,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LeetCode3" />
-      <item itemvalue="Application.LeetCode76" />
-      <item itemvalue="Application.LeetCode28" />
       <item itemvalue="Application.LeetCode622" />
       <item itemvalue="Application.LeetCode704" />
+      <item itemvalue="Application.LeetCode35" />
+      <item itemvalue="Application.BinarySearch" />
+      <item itemvalue="Application.LeetCode34" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode34" />
+        <item itemvalue="Application.LeetCode35" />
+        <item itemvalue="Application.BinarySearch" />
         <item itemvalue="Application.LeetCode704" />
         <item itemvalue="Application.LeetCode622" />
-        <item itemvalue="Application.LeetCode28" />
-        <item itemvalue="Application.LeetCode76" />
-        <item itemvalue="Application.LeetCode3" />
       </list>
     </recent_temporary>
   </component>
@@ -251,7 +259,9 @@
       <workItem from="1564572240128" duration="5004000" />
       <workItem from="1564645706499" duration="5517000" />
       <workItem from="1564712817075" duration="8665000" />
-      <workItem from="1564806187414" duration="20004000" />
+      <workItem from="1564806187414" duration="22727000" />
+      <workItem from="1565408163346" duration="1030000" />
+      <workItem from="1565409314610" duration="8608000" />
     </task>
     <servers />
   </component>
@@ -421,12 +431,50 @@
           <line>126</line>
           <option name="timeStamp" value="105" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode35.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode35.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="124" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode35.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="125" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode35.java</url>
+          <line>58</line>
+          <option name="timeStamp" value="126" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode35.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="127" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode34.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="136" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode34.java</url>
+          <line>59</line>
+          <option name="timeStamp" value="140" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LeetCode_Java$StackTests_testScoreOfParentheses.ic" NAME="StackTests.testScoreOfParentheses Coverage Results" MODIFIED="1556280415111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Stack.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LeetCode_Java$BinarySearch.ic" NAME="BinarySearch Coverage Results" MODIFIED="1565424899711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Basic.BinarySearch.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/LeetCode_Java$LeetCode567.ic" NAME="LeetCode567 Coverage Results" MODIFIED="1564725105428" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>SlidingWindow.LeetCode.medium.*</FILTER>

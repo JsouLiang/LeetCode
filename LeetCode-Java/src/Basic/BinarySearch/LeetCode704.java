@@ -46,6 +46,32 @@ public class LeetCode704 {
         return -1;
     }
 
+    public static int searchII(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+
+        int left = 0, right = nums.length - 1;
+        /// 结局 left 与 right 相差一个数
+        while (left + 1 < right) {
+            int middle = left + (right - left) / 2;
+            if (nums[middle] == target) {
+                right = middle;
+            } else if (nums[middle] > target) {
+                right = middle;
+            } else {
+                left = middle;
+            }
+        }
+        if (nums[left] == target) {
+            return left;
+        }
+        if (nums[right] == target) {
+            return right;
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         int[] array = new int[]{-1,0,3,5,9,12};
         int result = LeetCode704.search(array, 9);
