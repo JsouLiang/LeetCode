@@ -22,7 +22,7 @@ package Basic.BinarySearch;
  * 输入: [1,3,5,6], 0
  * 输出: 0
  *
- * @implNote basic binary search
+ * @implNote first bigger position
  */
 public class LeetCode35 {
     public static int searchInsert(int[] nums, int target) {
@@ -52,6 +52,37 @@ public class LeetCode35 {
             return left + 1;
         }
     }
+
+    public static int searchInsertPosition(int[] nums, int target) {
+        if (nums.length == 0) {
+            return 0;
+        }
+        if (target< nums[0]) {
+            return 0;
+        }
+        int left = 0, right = nums.length - 1;
+        while (left + 1 < right) {
+            int middle = left + (right - left) / 2;
+            if (nums[middle] == target) {
+                right = middle;
+            } else if (nums[middle] < target) {
+                left = middle;
+            } else {
+                right = middle;
+            }
+        }
+        /// 查询第一个大于 target 的位置
+        /// left 可能是第一次出现 target 的位置
+        if (nums[left] >= target) {
+            return left;
+        } else if (nums[right] >= target) {
+            return right;
+        } else {
+            return right + 1;
+        }
+
+    }
+
     public static void main(String[] args) {
         int[] nums = new int[]{1,3,5,6};
         int res = LeetCode35.searchInsert(nums, 5);
