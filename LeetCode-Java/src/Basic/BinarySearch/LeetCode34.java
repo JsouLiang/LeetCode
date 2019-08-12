@@ -15,9 +15,15 @@ package Basic.BinarySearch;
  * 示例 2:
  * 输入: nums = [5,7,7,8,8,10], target = 6
  * 输出: [-1,-1]
- * @implNote find first position of target
+ *
  */
 public class LeetCode34 {
+    /**
+     * @implNote find first position of greater target
+     * @param nums
+     * @param target
+     * @return
+     */
     public static int[] searchRange(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
             return new int[]{-1, -1};
@@ -52,6 +58,18 @@ public class LeetCode34 {
         res[1] = i - 1;
         return res;
 
+    }
+
+    /**
+     * @implNote find first position of greater than target And first position of lesser than target
+     * @param nums
+     * @param target
+     * @return
+     */
+    public static int[] searchRangeSolution2(int[] nums, int target) {
+        // TODO: find first position of greater than target
+        // TODO: first position of lesser than target
+        return null;
     }
     public static void main(String[] args) {
 //        int[] res = LeetCode34.searchRange(new int[]{1}, 1);
