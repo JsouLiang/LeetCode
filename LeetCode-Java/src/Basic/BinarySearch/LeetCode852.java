@@ -32,6 +32,7 @@ public class LeetCode852 {
                 /// 山峰右侧
                 right = middle;
             } else {
+                /// 因为没有重复的点，所以这个值就是山峰点
                 return middle;
             }
         }

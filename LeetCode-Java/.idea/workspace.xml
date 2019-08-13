@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode852.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode69.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/位运算/easy/LeetCode349.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode34.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode34.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode34.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode34.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode852.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/BinarySearch/LeetCode852.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode852.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode852.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +34,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -76,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode852">
+  <component name="RunManager" selected="Application.LeetCode69">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -111,8 +113,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode278" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode278" />
+    <configuration name="LeetCode658" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode658" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -125,8 +127,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode658" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode658" />
+    <configuration name="LeetCode69" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.LeetCode69" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -190,18 +192,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.LeetCode658" />
-      <item itemvalue="Application.LeetCode278" />
       <item itemvalue="Application.FindKClosedElement" />
       <item itemvalue="Application.LeetCode153" />
       <item itemvalue="Application.LeetCode852" />
+      <item itemvalue="Application.LeetCode69" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode69" />
         <item itemvalue="Application.LeetCode852" />
         <item itemvalue="Application.LeetCode153" />
         <item itemvalue="Application.LeetCode658" />
         <item itemvalue="Application.FindKClosedElement" />
-        <item itemvalue="Application.LeetCode278" />
       </list>
     </recent_temporary>
   </component>
@@ -258,7 +260,8 @@
       <workItem from="1565408163346" duration="1030000" />
       <workItem from="1565409314610" duration="13807000" />
       <workItem from="1565451897926" duration="15785000" />
-      <workItem from="1565614157327" duration="1134000" />
+      <workItem from="1565614157327" duration="3232000" />
+      <workItem from="1565687259243" duration="1357000" />
     </task>
     <servers />
   </component>
@@ -467,14 +470,14 @@
           <option name="timeStamp" value="178" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode852.java</url>
-          <line>44</line>
-          <option name="timeStamp" value="180" />
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode69.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="185" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode852.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="182" />
+          <url>file://$PROJECT_DIR$/src/Basic/BinarySearch/LeetCode69.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="187" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
