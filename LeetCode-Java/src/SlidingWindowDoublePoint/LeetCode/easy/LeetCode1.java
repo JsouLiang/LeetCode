@@ -63,6 +63,19 @@ public class LeetCode1 {
         }
         return new int[]{numInfos[left].index, numInfos[right].index};
     }
+
+    /**
+     * 给一整数数组, 找到数组中有多少组 不同的元素对 有相同的和, 且和为给出的 target 值, 返回对数.
+     * @implNote 如果先去重呢？ [7 , 7]  target: 14 => [7] 还需要做别的判断是否满足
+     * @param nums [1, 1, 2, 45, 46, 46]
+     * @param target 47
+     * @return 2 : 1 + 46 = 47; 2 + 25 = 27
+     */
+    public static int twoSumWithUniquePair(int[] nums, int target) {
+        return 0;
+        //TODO;
+    }
+
     public static void main(String[] args) {
         LeetCode1.twoSum(new int[]{2, 7, 11, 15}, 9);
         LeetCode1.twoSum(new int[]{3, 2, 4}, 6);
