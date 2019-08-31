@@ -2,15 +2,47 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/medium/LeetCode15.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/medium/LeetCode611.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/medium/LeetCode15.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/medium/LeetCode611.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode125.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode167.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode170.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode209.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode219.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode26.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode283.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode344.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/easy/LeetCode438.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/hard/LeetCode239.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/medium/LeetCode15.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/medium/LeetCode567.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/medium/LeetCode611.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/ReadMe.markdown" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/SlidingWindow/hard/LeetCode32.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DoublePoint/SlidingWindow/hard/LeetCode76.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/LeetCode/LeetCode208.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/math/LeetCode169.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/easy/LeetCode1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/easy/LeetCode1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/easy/LeetCode167.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/easy/LeetCode167.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/ReadMe.markdown" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/ReadMe.markdown" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/ReadMe.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/hard/LeetCode76.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/hard/LeetCode76.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/medium/LeetCode611.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/SlidingWindowDoublePoint/LeetCode/medium/LeetCode611.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/ReadMe.markdown" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode125.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode167.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode170.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode209.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode219.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode26.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode283.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode3.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode344.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode438.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/hard/LeetCode239.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/hard/LeetCode76.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/medium/LeetCode15.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/medium/LeetCode567.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/medium/LeetCode611.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,20 +114,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode611">
+  <component name="RunManager" selected="Application.LeetCode32">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindowDoublePoint.LeetCode.easy.LeetCode1" />
+    <configuration name="LeetCode169" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="math.LeetCode169" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SlidingWindowDoublePoint.LeetCode.easy.*" />
+          <option name="PATTERN" value="math.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -103,13 +135,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode15" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindowDoublePoint.LeetCode.medium.LeetCode15" />
+    <configuration name="LeetCode208" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tree.LeetCode.LeetCode208" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SlidingWindowDoublePoint.LeetCode.medium.*" />
+          <option name="PATTERN" value="Tree.LeetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,27 +149,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode167" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindowDoublePoint.LeetCode.easy.LeetCode167" />
+    <configuration name="LeetCode32" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DoublePoint.SlidingWindow.hard.LeetCode32" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="SlidingWindowDoublePoint.LeetCode.easy.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeetCode170" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="SlidingWindowDoublePoint.LeetCode.easy.LeetCode170" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="SlidingWindowDoublePoint.LeetCode.easy.*" />
+          <option name="PATTERN" value="DoublePoint.SlidingWindow.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,6 +170,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="SlidingWindowDoublePoint.LeetCode.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode76" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="SlidingWindowDoublePoint.LeetCode.hard.LeetCode76" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="SlidingWindowDoublePoint.LeetCode.hard.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,19 +227,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LeetCode1" />
-      <item itemvalue="Application.LeetCode170" />
-      <item itemvalue="Application.LeetCode167" />
-      <item itemvalue="Application.LeetCode15" />
       <item itemvalue="Application.LeetCode611" />
+      <item itemvalue="Application.LeetCode208" />
+      <item itemvalue="Application.LeetCode169" />
+      <item itemvalue="Application.LeetCode76" />
+      <item itemvalue="Application.LeetCode32" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode32" />
+        <item itemvalue="Application.LeetCode76" />
+        <item itemvalue="Application.LeetCode169" />
+        <item itemvalue="Application.LeetCode208" />
         <item itemvalue="Application.LeetCode611" />
-        <item itemvalue="Application.LeetCode15" />
-        <item itemvalue="Application.LeetCode167" />
-        <item itemvalue="Application.LeetCode170" />
-        <item itemvalue="Application.LeetCode1" />
       </list>
     </recent_temporary>
   </component>
@@ -268,6 +300,8 @@
       <workItem from="1565687259243" duration="6241000" />
       <workItem from="1565859656849" duration="1028000" />
       <workItem from="1566011672573" duration="24746000" />
+      <workItem from="1567156224797" duration="137000" />
+      <workItem from="1567156433867" duration="17729000" />
     </task>
     <servers />
   </component>
@@ -379,16 +413,6 @@
           <url>file://$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/easy/LeetCode438.java</url>
           <line>72</line>
           <option name="timeStamp" value="79" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/hard/LeetCode76.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="97" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/hard/LeetCode76.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="98" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode28.java</url>
@@ -554,6 +578,21 @@
           <url>file://$PROJECT_DIR$/src/SlidingWindowDoublePoint/LeetCode/medium/LeetCode611.java</url>
           <line>52</line>
           <option name="timeStamp" value="269" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/LeetCode169.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="292" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/math/LeetCode169.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="293" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/DoublePoint/SlidingWindow/hard/LeetCode32.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="319" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
