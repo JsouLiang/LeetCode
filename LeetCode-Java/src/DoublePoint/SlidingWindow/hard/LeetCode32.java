@@ -18,7 +18,7 @@ package DoublePoint.SlidingWindow.hard;
 public class LeetCode32 {
     // TODO: 栈 解法
     // TODO: 动态规划 解法
-    
+
     public int longestValidParentheses(String s) {
         /// 1. 扫描下原串
         /// (((()) 如果 ( +1, )-1 这种情况会导致结果为0，故还需要将括号串逆序再次扫描

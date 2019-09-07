@@ -1,7 +1,4 @@
-package Basic.queue;
-
-import java.util.ArrayList;
-import java.util.List;
+package Queue;
 
 /**
  * 622. 设计循环队列
