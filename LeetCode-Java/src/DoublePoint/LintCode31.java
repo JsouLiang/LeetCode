@@ -45,6 +45,7 @@ public class LintCode31 {
             }
             if (left < right) {
                 swipe(nums, left, right);
+                left++; right--;
             }
 
         }

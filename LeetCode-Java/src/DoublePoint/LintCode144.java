@@ -35,6 +35,7 @@ public class LintCode144 {
                 int temp = nums[left];
                 nums[left] = nums[right];
                 nums[right] = temp;
+                left++; right--;
             }
         }
         // 2. 交换正负数

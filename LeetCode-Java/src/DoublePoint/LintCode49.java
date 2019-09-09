@@ -37,6 +37,7 @@ public class LintCode49 {
                 char temp = chars[left];
                 chars[left] = chars[right];
                 chars[right] = temp;
+                left++; right--;
             }
         }
         return;
@@ -44,6 +45,7 @@ public class LintCode49 {
 
     public static void main(String[] args) {
         LintCode49 lintCode49 = new LintCode49();
+        lintCode49.sortLetters(new char[] {'c','D'});
         lintCode49.sortLetters(new char[] {'a','b','A','c','D'});
         lintCode49.sortLetters(new char[] {'A','B','D'});
     }
