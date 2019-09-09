@@ -1,4 +1,4 @@
-package math;
+package Math;
 
 /**
  * 169. 求众数

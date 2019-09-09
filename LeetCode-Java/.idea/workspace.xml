@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/DoublePoint/LeetCode/medium/LeetCode215.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/SegmentTree/LeetCode/LeetCode307.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/SegmentTree/Node.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/SegmentTree/Readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Tree/SegmentTree/SegmentTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode144.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode144.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode31.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode31.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode373.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode373.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode49.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/DoublePoint/LintCode49.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoublePoint/LintCode144.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoublePoint/LintCode144.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoublePoint/LintCode31.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoublePoint/LintCode31.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoublePoint/LintCode373.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoublePoint/LintCode373.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DoublePoint/LintCode49.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DoublePoint/LintCode49.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/math/LeetCode169.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/math/LeetCode169.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/math/LeetCode169.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Math/LeetCode169.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -83,7 +80,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode215">
+  <component name="RunManager" selected="Application.LeetCode307">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -97,6 +94,20 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="DoublePoint.LeetCode.medium.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode307" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Tree.SegmentTree.LeetCode.LeetCode307" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Tree.SegmentTree.LeetCode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,20 +131,6 @@
     </configuration>
     <configuration name="LintCode31" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="DoublePoint.LintCode31" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="DoublePoint.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LintCode373" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="DoublePoint.LintCode373" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -197,18 +194,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.LintCode31" />
-      <item itemvalue="Application.LintCode373" />
       <item itemvalue="Application.LintCode144" />
       <item itemvalue="Application.LintCode49" />
       <item itemvalue="Application.LeetCode215" />
+      <item itemvalue="Application.LeetCode307" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode307" />
         <item itemvalue="Application.LeetCode215" />
         <item itemvalue="Application.LintCode49" />
         <item itemvalue="Application.LintCode31" />
         <item itemvalue="Application.LintCode144" />
-        <item itemvalue="Application.LintCode373" />
       </list>
     </recent_temporary>
   </component>
@@ -271,7 +268,9 @@
       <workItem from="1566011672573" duration="24746000" />
       <workItem from="1567156224797" duration="137000" />
       <workItem from="1567156433867" duration="24355000" />
-      <workItem from="1567842163646" duration="24938000" />
+      <workItem from="1567842163646" duration="25055000" />
+      <workItem from="1568026420594" duration="63000" />
+      <workItem from="1568026531008" duration="5690000" />
     </task>
     <servers />
   </component>
@@ -550,12 +549,12 @@
           <option name="timeStamp" value="269" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/math/LeetCode169.java</url>
+          <url>file://$PROJECT_DIR$/src/Math/LeetCode169.java</url>
           <line>38</line>
           <option name="timeStamp" value="292" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/math/LeetCode169.java</url>
+          <url>file://$PROJECT_DIR$/src/Math/LeetCode169.java</url>
           <line>33</line>
           <option name="timeStamp" value="293" />
         </line-breakpoint>
@@ -638,6 +637,11 @@
           <url>file://$PROJECT_DIR$/src/DoublePoint/LeetCode/medium/LeetCode215.java</url>
           <line>69</line>
           <option name="timeStamp" value="401" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Tree/SegmentTree/LeetCode/LeetCode307.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="415" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
