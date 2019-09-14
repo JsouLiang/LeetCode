@@ -1,5 +1,6 @@
 package Tree.LeetCode;
 
+import javafx.util.Pair;
 import jdk.nashorn.api.tree.Tree;
 
 import java.util.*;
@@ -36,6 +37,11 @@ public class TreeNode {
             }
         }
         return root;
+    }
+
+    public static TreeNode createTreeWith(Integer[] nodes) {
+        ArrayList<Integer> list = new ArrayList<Integer>(Arrays.asList(nodes));
+        return createTreeWith(list);
     }
 
     /**
@@ -200,7 +206,7 @@ public class TreeNode {
     }
 
     /**
-     * 938. 二叉搜索树的范围和
+     * LeetCode 938. 二叉搜索树的范围和
      * 给定二叉搜索树的根结点 root，返回 L 和 R（含）之间的所有结点的值的和。
      *
      * 二叉搜索树保证具有唯一的值。
@@ -242,7 +248,7 @@ public class TreeNode {
     }
 
     /**
-     * 100. 相同的树
+     * LeetCode 100. 相同的树
      * 给定两个二叉树，编写一个函数来检验它们是否相同。
      *
      * 如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。
@@ -283,6 +289,109 @@ public class TreeNode {
             return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
         }
         return false;
+    }
+
+    /**
+     * LeetCode 257 给定一个二叉树，返回所有从根节点到叶子节点的路径。
+     *
+     * 说明: 叶子节点是指没有子节点的节点。
+     *
+     * 示例:
+     *
+     * 输入:
+     *
+     *    1
+     *  /   \
+     * 2     3
+     *  \
+     *   5
+     *
+     * 输出: ["1->2->5", "1->3"]
+     *
+     * 解释: 所有根节点到叶子节点的路径为: 1->2->5, 1->3
+     * @param root
+     * @return
+     */
+    public List<String> binaryTreePaths(TreeNode root) {
+        return null;
+    }
+
+    /**
+     * Minimum SubTree
+     * Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.
+     * @param root tree
+     * @return minimum sub tree
+     */
+    private TreeNode minimumTree;
+    private Integer minimumSumValue = Integer.MAX_VALUE;
+    public TreeNode findSubtree(TreeNode root) {
+        subtreeSum(root);
+        return minimumTree;
+    }
+    private int subtreeSum(TreeNode root) {
+        if (root == null) {
+            return 0;
+        }
+        int leftSum = subtreeSum(root.left);
+        int rightSum = subtreeSum(root.right);
+        int currentSum = root.val + leftSum + rightSum;
+        if (currentSum < minimumSumValue) {
+            minimumSumValue = currentSum;
+            minimumTree = root;
+        }
+        return currentSum;
+    }
+
+    /**
+     * Description
+     * Given a binary tree, find the subtree with maximum average. Return the root of the subtree.
+     *
+     * Notice
+     * LintCode will print the subtree which root is your return node.
+     * It's guaranteed that there is only one subtree with maximum average.
+     */
+    private MinimumAverageResultType minimumAverageResult;
+    private class MinimumAverageResultType {
+        TreeNode node;
+        int sum;
+        int nodeCount;
+
+        public MinimumAverageResultType(TreeNode node, int sum, int nodeCount) {
+            this.node = node;
+            this.sum = sum;
+            this.nodeCount = nodeCount;
+        }
+
+        public void setNode(TreeNode node) {
+            this.node = node;
+        }
+
+        public void setSum(int sum) {
+            this.sum = sum;
+        }
+
+        public void setNodeCount(int nodeCount) {
+            this.nodeCount = nodeCount;
+        }
+    }
+    public TreeNode subtreeWithMinimumAverage(TreeNode root) {
+        MinimumAverageResultType res = minimumAverageSubTree(root);
+        return res.node;
+    }
+
+    private MinimumAverageResultType minimumAverageSubTree(TreeNode root) {
+        if (root == null) {
+            return new MinimumAverageResultType(null, 0, 0);
+        }
+        MinimumAverageResultType leftResultType = minimumAverageSubTree(root.left);
+        MinimumAverageResultType rightResultType = minimumAverageSubTree(root.left);
+        MinimumAverageResultType result = new MinimumAverageResultType(root, leftResultType.sum + rightResultType.sum + root.val, leftResultType.nodeCount + rightResultType.nodeCount + 1);
+        if (minimumAverageResult == null || minimumAverageResult.sum * result.nodeCount > result.sum * minimumAverageResult.nodeCount) {
+            minimumAverageResult.setNode(root);
+            minimumAverageResult.setSum(result.sum);
+            minimumAverageResult.setNodeCount(result.nodeCount);
+        }
+        return result;
     }
 
     public static void main(String[] args) {
