@@ -15,12 +15,12 @@ import jdk.nashorn.api.tree.Tree;
  */
 public class LeetCode98 {
 
-    private class ResultType {
+    private class ResultTypeOfNode {
         boolean isBST;
         TreeNode minNode;
         TreeNode maxNode;
 
-        public ResultType(boolean isBST) {
+        public ResultTypeOfNode(boolean isBST) {
             this.isBST = isBST;
             minNode = null;
             maxNode = null;
@@ -31,36 +31,80 @@ public class LeetCode98 {
         return checkIsBST(root).isBST;
     }
 
-    private ResultType checkIsBST(TreeNode root) {
+    private ResultTypeOfNode checkIsBST(TreeNode root) {
         if (root == null) {
-            return new ResultType(true);
+            return new ResultTypeOfNode(true);
         }
-        ResultType leftSubtreeCheckResult = checkIsBST(root.left);
-        ResultType rightSubTreeCheckResult = checkIsBST(root.right);
+        ResultTypeOfNode leftSubtreeCheckResult = checkIsBST(root.left);
+        ResultTypeOfNode rightSubTreeCheckResult = checkIsBST(root.right);
         return margin(root, leftSubtreeCheckResult, rightSubTreeCheckResult);
     }
 
-    private ResultType margin(TreeNode root, ResultType leftResult, ResultType rightResult) {
+    private ResultTypeOfNode margin(TreeNode root, ResultTypeOfNode leftResult, ResultTypeOfNode rightResult) {
         if (!leftResult.isBST || !rightResult.isBST) {
-            return new ResultType(false);
+            return new ResultTypeOfNode(false);
         }
         if (leftResult.maxNode != null && leftResult.maxNode.val >= root.val ||
             rightResult.minNode != null && root.val >= rightResult.minNode.val) {
-            return new ResultType(false);
+            return new ResultTypeOfNode(false);
         }
-        ResultType result = new ResultType(true);
+        ResultTypeOfNode result = new ResultTypeOfNode(true);
         result.minNode = leftResult.minNode != null ? leftResult.minNode : root;
         result.maxNode = rightResult.maxNode != null ? rightResult.maxNode : root;
         return result;
     }
 
+
+    private class ResultTypeOfValue {
+        boolean isBST;
+        int maxValue;
+        int minValue;
+
+        public ResultTypeOfValue(boolean isBST, int maxValue, int minValue) {
+            this.isBST = isBST;
+            this.maxValue = maxValue;
+            this.minValue = minValue;
+        }
+    }
+    public boolean isValidBSTByCheckValue(TreeNode root) {
+        return checkIsBSTUseValue(root).isBST;
+    }
+
+    private ResultTypeOfValue checkIsBSTUseValue(TreeNode root) {
+        if (root == null) {
+            return new ResultTypeOfValue(true, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        }
+        ResultTypeOfValue leftSubtreeResult = checkIsBSTUseValue(root.left);
+        ResultTypeOfValue rightSubtreeResult = checkIsBSTUseValue(root.right);
+        return marginOfResultValue(root, leftSubtreeResult, rightSubtreeResult);
+    }
+
+    private ResultTypeOfValue marginOfResultValue(TreeNode root, ResultTypeOfValue leftResult, ResultTypeOfValue rightResult) {
+        if (!leftResult.isBST || !rightResult.isBST) {
+            return new ResultTypeOfValue(false, 0, 0);
+        }
+        if (root.left != null && leftResult.maxValue >= root.val ||
+                root.right != null &&root.val >= rightResult.minValue) {
+            // is BST
+            return new ResultTypeOfValue(false, 0,0 );
+        }
+        ResultTypeOfValue resultTypeOfValue = new ResultTypeOfValue(true,
+                Math.max(root.val, rightResult.maxValue),       // maxValue
+                Math.min(root.val, leftResult.minValue)         // minValue
+        );
+        return resultTypeOfValue;
+    }
+
     public static void main(String[] args) {
         LeetCode98 leetCode98 = new LeetCode98();
         TreeNode root = TreeNode.createTreeWith(new Integer[] {5,1,4,null,null,3,6});
-        boolean result =  leetCode98.isValidBST(root);
+        boolean result =  leetCode98.isValidBSTByCheckValue(root);
 
         root = TreeNode.createTreeWith(new Integer[] {2, 1, 3});
-        result =  leetCode98.isValidBST(root);
+        result =  leetCode98.isValidBSTByCheckValue(root);
+
+        root = TreeNode.createTreeWith(new Integer[] {1, 1});
+        result =  leetCode98.isValidBSTByCheckValue(root);
         System.out.println(result);
     }
 }
