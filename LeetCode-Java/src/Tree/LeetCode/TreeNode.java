@@ -6,12 +6,29 @@ import jdk.nashorn.api.tree.Tree;
 import java.util.*;
 
 public class TreeNode {
-      int val;
-      TreeNode left;
-      TreeNode right;
-      TreeNode(int x) { val = x; }
+    public int val;
+    public TreeNode left;
+    public TreeNode right;
+
+    TreeNode(int x) {
+        val = x;
+    }
+
+    public int getVal() {
+        return val;
+    }
+
+    public TreeNode getLeft() {
+        return left;
+    }
+
+    public TreeNode getRight() {
+        return right;
+    }
+
     /**
      * 层序遍历创建二叉树
+     *
      * @param nodes
      */
     public static TreeNode createTreeWith(ArrayList<Integer> nodes) {
@@ -21,7 +38,7 @@ public class TreeNode {
         tree.add(root);
         TreeNode current = root;
         for (int i = 1; i < nodes.size(); i++) {
-            int currentIndex = (int)Math.ceil(i / 2.0) - 1;
+            int currentIndex = (int) Math.ceil(i / 2.0) - 1;
             current = tree.get(currentIndex);
             TreeNode treeNode = null;
 
@@ -58,9 +75,9 @@ public class TreeNode {
         queue.offer(root);
         queue.offer(markNode);
 
-        while(!queue.isEmpty() && queue.peek().val != Integer.MAX_VALUE) {
+        while (!queue.isEmpty() && queue.peek().val != Integer.MAX_VALUE) {
             ArrayList<Integer> level = new ArrayList<Integer>();
-            for (int i = 0;;i++) {
+            for (int i = 0; ; i++) {
                 TreeNode header = queue.poll();
                 if (header.val == Integer.MAX_VALUE) {
                     queue.offer(header);
@@ -81,9 +98,9 @@ public class TreeNode {
 
     /**
      * 给定一个二叉树，找出其最大深度。
-     *
+     * <p>
      * 二叉树的深度为根节点到最远叶子节点的最长路径上的节点数。
-     *
+     * <p>
      * 说明: 叶子节点是指没有子节点的节点。
      */
     public int maxDepth() {
@@ -98,21 +115,22 @@ public class TreeNode {
 
     /**
      * 给定一个二叉树，检查它是否是镜像对称的。
-     *
+     * <p>
      * 例如，二叉树 [1,2,2,3,4,4,3] 是对称的。
-     *
-     *     1
-     *    / \
-     *   2   2
-     *  / \ / \
+     * <p>
+     * 1
+     * / \
+     * 2   2
+     * / \ / \
      * 3  4 4  3
      * 但是下面这个 [1,2,2,null,3,null,3] 则不是镜像对称的:
+     * <p>
+     * 1
+     * / \
+     * 2   2
+     * \   \
+     * 3    3
      *
-     *     1
-     *    / \
-     *   2   2
-     *    \   \
-     *    3    3
      * @param root
      * @return
      */
@@ -124,19 +142,19 @@ public class TreeNode {
     /**
      * 112. 路径总和
      * 给定一个二叉树和一个目标和，判断该树中是否存在根节点到叶子节点的路径，这条路径上所有节点值相加等于目标和。
-     *
+     * <p>
      * 说明: 叶子节点是指没有子节点的节点。
-     *
+     * <p>
      * 示例:
      * 给定如下二叉树，以及目标和 sum = 22，
-     *
-     *               5
-     *              / \
-     *             4   8
-     *            /   / \
-     *           11  13  4
-     *          /  \      \
-     *         7    2      1
+     * <p>
+     * 5
+     * / \
+     * 4   8
+     * /   / \
+     * 11  13  4
+     * /  \      \
+     * 7    2      1
      * 返回 true, 因为存在目标和为 22 的根节点到叶子节点的路径 5->4->11->2。
      */
     public boolean hasPathSum(TreeNode root, int sum) {
@@ -145,6 +163,7 @@ public class TreeNode {
         }
         return pathSum(root, 0, sum);
     }
+
     private boolean pathSum(TreeNode node, int currentValue, int sum) {
         if (node == null) {
             return false;
@@ -157,21 +176,21 @@ public class TreeNode {
     /**
      * 106. 从中序与后序遍历序列构造二叉树
      * 根据一棵树的中序遍历与后序遍历构造二叉树。
-     *
+     * <p>
      * 注意:
      * 你可以假设树中没有重复的元素。
-     *
+     * <p>
      * 例如，给出
-     *
+     * <p>
      * 中序遍历 inorder = [9,3,15,20,7]
      * 后序遍历 postorder = [9,15,7,20,3]
      * 返回如下的二叉树：
-     *
-     *     3
-     *    / \
-     *   9  20
-     *     /  \
-     *    15   7
+     * <p>
+     * 3
+     * / \
+     * 9  20
+     * /  \
+     * 15   7
      *
      * @implNote 后序遍历的最后一个节点，一定是本次递归中一颗树的根节点；
      * 从中序遍历数组中找到这个根节点，节点左边一定是左子树，右边是右子树
@@ -208,15 +227,15 @@ public class TreeNode {
     /**
      * LeetCode 938. 二叉搜索树的范围和
      * 给定二叉搜索树的根结点 root，返回 L 和 R（含）之间的所有结点的值的和。
-     *
+     * <p>
      * 二叉搜索树保证具有唯一的值。
-     *
+     * <p>
      * 示例 1：
-     *
+     * <p>
      * 输入：root = [10,5,15,3,7,null,18], L = 7, R = 15
      * 输出：32
      * 示例 2：
-     *
+     * <p>
      * 输入：root = [10,5,15,3,7,13,18,1,null,6], L = 6, R = 10
      * 输出：23
      */
@@ -250,42 +269,42 @@ public class TreeNode {
     /**
      * LeetCode 100. 相同的树
      * 给定两个二叉树，编写一个函数来检验它们是否相同。
-     *
+     * <p>
      * 如果两个树在结构上相同，并且节点具有相同的值，则认为它们是相同的。
-     *
+     * <p>
      * 示例 1:
-     *
+     * <p>
      * 输入:       1         1
-     *           / \       / \
-     *          2   3     2   3
-     *
-     *         [1,2,3],   [1,2,3]
-     *
+     * / \       / \
+     * 2   3     2   3
+     * <p>
+     * [1,2,3],   [1,2,3]
+     * <p>
      * 输出: true
      * 示例 2:
-     *
+     * <p>
      * 输入:      1          1
-     *           /           \
-     *          2             2
-     *
-     *         [1,2],     [1,null,2]
-     *
+     * /           \
+     * 2             2
+     * <p>
+     * [1,2],     [1,null,2]
+     * <p>
      * 输出: false
      * 示例 3:
-     *
+     * <p>
      * 输入:       1         1
-     *           / \       / \
-     *          2   1     1   2
-     *
-     *         [1,2,1],   [1,1,2]
-     *
+     * / \       / \
+     * 2   1     1   2
+     * <p>
+     * [1,2,1],   [1,1,2]
+     * <p>
      * 输出: false
      */
     public static boolean isSameTree(TreeNode p, TreeNode q) {
         if (p == null && q == null) {
             return true;
         }
-        if (p!=null && q!=null && p.val == q.val) {
+        if (p != null && q != null && p.val == q.val) {
             return isSameTree(p.left, q.left) && isSameTree(p.right, q.right);
         }
         return false;
@@ -293,22 +312,23 @@ public class TreeNode {
 
     /**
      * LeetCode 257 给定一个二叉树，返回所有从根节点到叶子节点的路径。
-     *
+     * <p>
      * 说明: 叶子节点是指没有子节点的节点。
-     *
+     * <p>
      * 示例:
-     *
+     * <p>
      * 输入:
-     *
-     *    1
-     *  /   \
+     * <p>
+     * 1
+     * /   \
      * 2     3
-     *  \
-     *   5
-     *
+     * \
+     * 5
+     * <p>
      * 输出: ["1->2->5", "1->3"]
-     *
+     * <p>
      * 解释: 所有根节点到叶子节点的路径为: 1->2->5, 1->3
+     *
      * @param root
      * @return
      */
@@ -319,15 +339,18 @@ public class TreeNode {
     /**
      * Minimum SubTree
      * Given a binary tree, find the subtree with minimum sum. Return the root of the subtree.
+     *
      * @param root tree
      * @return minimum sub tree
      */
     private TreeNode minimumTree;
     private Integer minimumSumValue = Integer.MAX_VALUE;
+
     public TreeNode findSubtree(TreeNode root) {
         subtreeSum(root);
         return minimumTree;
     }
+
     private int subtreeSum(TreeNode root) {
         if (root == null) {
             return 0;
@@ -345,12 +368,13 @@ public class TreeNode {
     /**
      * Description
      * Given a binary tree, find the subtree with maximum average. Return the root of the subtree.
-     *
+     * <p>
      * Notice
      * LintCode will print the subtree which root is your return node.
      * It's guaranteed that there is only one subtree with maximum average.
      */
     private MinimumAverageResultType minimumAverageResult;
+
     private class MinimumAverageResultType {
         TreeNode node;
         int sum;
@@ -374,6 +398,7 @@ public class TreeNode {
             this.nodeCount = nodeCount;
         }
     }
+
     public TreeNode subtreeWithMinimumAverage(TreeNode root) {
         MinimumAverageResultType res = minimumAverageSubTree(root);
         return res.node;
@@ -395,7 +420,7 @@ public class TreeNode {
     }
 
     public static void main(String[] args) {
-        Integer[] values = {10,5,15,3,7,null,18};
+        Integer[] values = {10, 5, 15, 3, 7, null, 18};
         ArrayList<Integer> arrayList = new ArrayList<Integer>(Arrays.asList(values));
 //        ArrayList<Integer> values = new ArrayList<>() {1,  2, 3};
 
@@ -407,8 +432,8 @@ public class TreeNode {
 //        TreeNode root = TreeNode.createTreeWith(arrayList);
 //        TreeNode.rangeSumBST(root, 7, 15);
 
-        TreeNode leftTree = TreeNode.createTreeWith(new ArrayList<Integer>(Arrays.asList(new Integer[]{1,2})));
-        TreeNode rightTree = TreeNode.createTreeWith(new ArrayList<Integer>(Arrays.asList(new Integer[]{1,null,3})));
+        TreeNode leftTree = TreeNode.createTreeWith(new ArrayList<Integer>(Arrays.asList(new Integer[]{1, 2})));
+        TreeNode rightTree = TreeNode.createTreeWith(new ArrayList<Integer>(Arrays.asList(new Integer[]{1, null, 3})));
         boolean result = TreeNode.isSameTree(leftTree, rightTree);
         System.out.println("");
     }
