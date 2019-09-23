@@ -165,7 +165,7 @@ public class LeetCode127 {
         return 0;
     }
     // TODO: 双向广度优先搜索
-    
+
     public static void main(String[] args) {
         LeetCode127 leetCode127 = new LeetCode127();
         int step = leetCode127.ladderLength("hit", "cog", Arrays.asList(new String[]{"hot", "dot", "dog", "lot", "log", "cog"}));
