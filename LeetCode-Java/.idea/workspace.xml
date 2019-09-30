@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/BFS/LeetCode103.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS/LeetCode107.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS/LeetCode111.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BFS/LeetCode130.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Basic/string/LeetCode392.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Basic/string/StringAlgo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode199.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/string/LeetCode415.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Basic/string/LeetCode43.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/Greed/LeetCode55.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/LeetCode/META-INF/LeetCode.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BFS/LeetCode199.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Basic/string/LeetCode415.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Basic/string/LeetCode43.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Greed/LeetCode55.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode127.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode127.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BFS/LeetCode127.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/LeetCode127.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode130$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode130$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode130.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/BFS/LeetCode130.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BFS/LeetCode130.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/BFS/LeetCode130.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -82,51 +86,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode130">
+  <component name="RunManager" selected="Application.LeetCode415">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeetCode103" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BFS.LeetCode103" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeetCode107" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BFS.LeetCode107" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LeetCode111" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="BFS.LeetCode111" />
-      <module name="LeetCode" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="BFS.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -145,13 +107,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LeetCode392" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.string.LeetCode392" />
+    <configuration name="LeetCode199" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="BFS.LeetCode199" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="BFS.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode415" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.string.LeetCode415" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Basic.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode43" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Basic.string.LeetCode43" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Basic.string.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LeetCode55" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Greed.LeetCode55" />
+      <module name="LeetCode" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Greed.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,19 +199,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.LeetCode392" />
-      <item itemvalue="Application.LeetCode103" />
-      <item itemvalue="Application.LeetCode107" />
-      <item itemvalue="Application.LeetCode111" />
       <item itemvalue="Application.LeetCode130" />
+      <item itemvalue="Application.LeetCode199" />
+      <item itemvalue="Application.LeetCode55" />
+      <item itemvalue="Application.LeetCode43" />
+      <item itemvalue="Application.LeetCode415" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.LeetCode415" />
+        <item itemvalue="Application.LeetCode43" />
+        <item itemvalue="Application.LeetCode55" />
+        <item itemvalue="Application.LeetCode199" />
         <item itemvalue="Application.LeetCode130" />
-        <item itemvalue="Application.LeetCode111" />
-        <item itemvalue="Application.LeetCode107" />
-        <item itemvalue="Application.LeetCode103" />
-        <item itemvalue="Application.LeetCode392" />
       </list>
     </recent_temporary>
   </component>
@@ -278,7 +282,7 @@
       <workItem from="1569132505822" duration="10227000" />
       <workItem from="1569147828738" duration="90000" />
       <workItem from="1569147949126" duration="7225000" />
-      <workItem from="1569219152442" duration="7791000" />
+      <workItem from="1569219152442" duration="17728000" />
     </task>
     <servers />
   </component>
@@ -808,8 +812,53 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/BFS/LeetCode130.java</url>
-          <line>63</line>
-          <option name="timeStamp" value="613" />
+          <line>69</line>
+          <option name="timeStamp" value="629" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BFS/LeetCode130.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="630" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/BFS/LeetCode199.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="632" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode43.java</url>
+          <line>111</line>
+          <option name="timeStamp" value="648" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode43.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="651" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode43.java</url>
+          <line>113</line>
+          <option name="timeStamp" value="652" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode43.java</url>
+          <line>110</line>
+          <option name="timeStamp" value="653" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode415.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="655" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode415.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="661" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Basic/string/LeetCode415.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="663" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

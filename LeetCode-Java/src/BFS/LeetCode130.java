@@ -1,9 +1,6 @@
 package BFS;
 
-import java.util.HashSet;
-import java.util.LinkedList;
-import java.util.Queue;
-import java.util.Set;
+import java.util.*;
 
 /**
  * 130. 被围绕的区域
@@ -44,11 +41,11 @@ public class LeetCode130 {
         }
 
         boolean isBoundOfBoard(char[][] board) {
-            return y == board.length - 1 || x == board[0].length - 1;
+            return y == 0 || x == 0 || y == board.length - 1 || x == board[0].length - 1;
         }
 
         boolean inBoard(char[][] board) {
-            return y < board.length && x < board[0].length;
+            return 0 <= y && y < board.length && 0 <= x && x < board[0].length;
         }
     }
 
@@ -56,13 +53,16 @@ public class LeetCode130 {
         if (board == null) {
             return;
         }
+        if (board.length == 0) {
+            return;
+        }
         final int row = board.length;
         final int column = board[0].length;
-        for (int x = 0; x < row; x++) {
-            for (int y = 0; y < column; y++) {
-                if (board[x][y] == O) {
-                    if (bfs(board, new Point(x, y))) {
-                        board[x][y] = X;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                if (board[i][j] == O) {
+                    if (bfs(board, new Point(j, i))) {
+                        board[i][j] = X;
                     }
                 }
             }
@@ -75,20 +75,26 @@ public class LeetCode130 {
         Queue<Point> queue = new LinkedList<>();
         queue.offer(currentPoint);
         boolean[][] visitedMap = new boolean[board.length][board[0].length];
-        visitedMap[currentPoint.x][currentPoint.y] = true;
+        visitedMap[currentPoint.y][currentPoint.x] = true;
+        List<Point> visitedPoint = new LinkedList<>();
 
         while (!queue.isEmpty()) {
             final Point point = queue.poll();
+            visitedPoint.add(point);
+
             if (point.isBoundOfBoard(board)) {
                 return false;
             }
             for (int i = 0; i < 4; i++) {
                 Point nextPoint = new Point(point.x + dx[i], point.y + dy[i]);
-                if (nextPoint.inBoard(board) && board[nextPoint.x][nextPoint.y] == O && visitedMap[nextPoint.x][nextPoint.y]  == false) {
-                    visitedMap[nextPoint.x][nextPoint.y] = true;
+                if (nextPoint.inBoard(board) && board[nextPoint.y][nextPoint.x] == O && visitedMap[nextPoint.y][nextPoint.x]  == false) {
+                    visitedMap[nextPoint.y][nextPoint.x] = true;
                     queue.offer(nextPoint);
                 }
             }
+        }
+        for (Point point : visitedPoint) {
+            board[point.y][point.x] = O;
         }
         return true;
     }
@@ -101,6 +107,16 @@ public class LeetCode130 {
                 {'X', 'X', 'O', 'X'},
                 {'X', 'X', 'X', 'X'},
                 {'X', 'O', 'X', 'X'},
+        });
+
+        leetCode130.solve(new char[][]{
+                {'X',  'O' , 'X'},
+                {'O',  'X' , 'O'},
+                {'X',  'O' , 'X'},
+        });
+        leetCode130.solve(new char[][]{
+                {'O' , 'O'},
+                {'O' , 'O'},
         });
     }
 }
