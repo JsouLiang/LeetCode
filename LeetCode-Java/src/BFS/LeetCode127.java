@@ -1,9 +1,11 @@
 package BFS;
 
+import Link.leetcode.easy.ListNode;
+
 import java.util.*;
 
 /**
- * 127. 单词接龙
+ * 127. 单词接龙 Word Ladder
  * 给定两个单词（beginWord 和 endWord）和一个字典，找到从 beginWord 到 endWord 的最短转换序列的长度。转换需遵循如下规则：
  * <p>
  * 每次转换只能改变一个字母。
@@ -66,25 +68,43 @@ public class LeetCode127 {
             step++;
             for (int l = 0; l < currentLevelCount; l++) {
                 String currentWord = queue.poll();
-                System.out.println(currentWord);
                 if (currentWord.equals(endWord)) {
                     return step;
                 }
-                for (int i = 0; i < currentWord.length(); i++) {
-                    StringBuilder beginStringBuilder = new StringBuilder(currentWord);
-                    // 每个单词搜 a ~ z ： TOL
-                    for (char c = 'a'; c <= 'z'; c++) {
-                        String targetStr = beginStringBuilder.replace(i, i + 1, "" + c).toString();
-                        System.out.println(targetStr);
-                        if (wordsSet.contains(targetStr) && !visitedWord.contains(targetStr)) {
-                            queue.offer(targetStr);
-                            visitedWord.add(targetStr);
-                        }
+                List<String> expandStrings = expand(currentWord);
+                for (String expendString: expandStrings) {
+                    if (wordsSet.contains(expendString) && !visitedWord.contains(expendString)) {
+                        queue.offer(expendString);
+                        visitedWord.add(expendString);
                     }
                 }
+//                for (int i = 0; i < currentWord.length(); i++) {
+//                    StringBuilder beginStringBuilder = new StringBuilder(currentWord);
+//                    // 每个单词搜 a ~ z ： TOL
+//                    for (char c = 'a'; c <= 'z'; c++) {
+//                        String targetStr = beginStringBuilder.replace(i, i + 1, "" + c).toString();
+//                        if (wordsSet.contains(targetStr) && !visitedWord.contains(targetStr)) {
+//                            queue.offer(targetStr);
+//                            visitedWord.add(targetStr);
+//                        }
+//                    }
+//                }
             }
         }
         return 0;
+    }
+
+    private List<String> expand(String currentWord) {
+        final int currentWordLength = currentWord.length();
+        List<String> res = new ArrayList<>();
+        for (int i = 0; i < currentWordLength; i++) {
+            for (char c = 'a'; c <= 'z'; c++) {
+                if (c != currentWord.charAt(i)) {
+                    res.add(currentWord.substring(0, i) + c + currentWord.substring(i + 1));
+                }
+            }
+        }
+        return res;
     }
 
     public int ladderLength(String beginWord, String endWord, List<String> wordList) {
@@ -168,10 +188,10 @@ public class LeetCode127 {
 
     public static void main(String[] args) {
         LeetCode127 leetCode127 = new LeetCode127();
-        int step = leetCode127.ladderLength("hit", "cog", Arrays.asList(new String[]{"hot", "dot", "dog", "lot", "log", "cog"}));
-        step = leetCode127.ladderLength("hit", "cog", Arrays.asList(new String[]{"hot", "dot", "dog", "lot", "log"}));
-        step = leetCode127.ladderLength("hot", "dog", Arrays.asList(new String[]{"hot", "dog"}));
-        step = leetCode127.ladderLength("leet", "code", Arrays.asList(new String[]{"lest", "leet", "lose", "code", "lode", "robe", "lost"}));
+        int step = leetCode127.ladderLengthTOL("hit", "cog", Arrays.asList(new String[]{"hot", "dot", "dog", "lot", "log", "cog"}));// 5
+        step = leetCode127.ladderLengthTOL("hit", "cog", Arrays.asList(new String[]{"hot", "dot", "dog", "lot", "log"}));  // 0
+        step = leetCode127.ladderLengthTOL("hot", "dog", Arrays.asList(new String[]{"hot", "dog"}));               // 0
+        step = leetCode127.ladderLengthTOL("leet", "code", Arrays.asList(new String[]{"lest", "leet", "lose", "code", "lode", "robe", "lost"}));//6
         System.out.println(step);
     }
 }
