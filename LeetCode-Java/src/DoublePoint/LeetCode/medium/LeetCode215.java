@@ -67,7 +67,9 @@ public class LeetCode215 {
 
     public static void main(String[] args) {
         LeetCode215 leetCode215 = new LeetCode215();
-        int res = leetCode215.findKthLargest(new int[]{2, 1}, 1);
+        int res = leetCode215.findKthLargest(new int[]{3,2,1,5,6}, 2);
+        res = leetCode215.findKthLargest(new int[]{2, 1}, 1);
+
         res = leetCode215.findKthLargest(new int[]{3, 3, 1,2,6,4}, 1);
         res = leetCode215.findKthLargest(new int[]{3,2,1,5,6,4}, 2);
         res = leetCode215.findKthLargest(new int[]{3,2,3,1,2,4,5,5,6}, 2);
