@@ -36,10 +36,12 @@ public class WoodCut {
         while (minBound + 1 < maxBounds) {
             int middle = minBound + (maxBounds - minBound) / 2;
             int cutCount = cutCount(middle, L);
-            if (cutCount >= k) {
-                minBound = middle;
+            if (cutCount > k) {
+                minBound = middle - 1;
+            } else if (cutCount < k){
+                maxBounds = middle + 1;
             } else {
-                maxBounds = middle;
+                minBound = middle;
             }
         }
         if (cutCount(maxBounds, L) >= k) {

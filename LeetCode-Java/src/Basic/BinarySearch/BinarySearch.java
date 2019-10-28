@@ -1,5 +1,7 @@
 package Basic.BinarySearch;
 
+import java.util.Arrays;
+
 /**
  * 二分查找
  * Created by X-Liang
@@ -45,6 +47,25 @@ public class BinarySearch {
         return -1;
     }
 
+    public static int search(int target, int[] nums) {
+        if (nums == null || nums.length == 0) {
+            return 0;
+        }
+        Arrays.sort(nums);
+        int left = 0, right = nums.length - 1;
+        while(left <= right) {
+            int middle = left + (right - left) / 2;
+            if (nums[middle] == target) {
+                return middle;
+            } else if (nums[middle] > target) {
+                right = middle;
+            } else {
+                left = middle;
+            }
+        }
+        return -1;
+    }
+
 
     public static int searchII(int[] nums, int target) {
         if (nums == null || nums.length == 0) {
@@ -58,9 +79,9 @@ public class BinarySearch {
             if (nums[middle] == target) {
                 right = middle;
             } else if (nums[middle] > target) {
-                right = middle;
+                right = middle - 1;
             } else {
-                left = middle;
+                left = middle + 1;
             }
         }
         if (nums[left] == target) {
@@ -157,6 +178,33 @@ public class BinarySearch {
         return -1;
     }
 
+    public static int findLastPositionOfTarget(int[] nums, int target) {
+        if (nums == null || nums.length == 0) {
+            return -1;
+        }
+        int start = 0, end = nums.length - 1;
+        while (start <= end) {
+            int middle = start + (end - start) / 2;
+            if (nums[middle] == target) {
+                start = middle + 1;
+                if (start == nums.length || nums[start] > target) {
+                    return middle;
+                }
+//                if (start + 1 == nums.length) {
+//                    return start;
+//                }
+//                if (nums[start] > target) {
+//                    return middle;
+//                }
+            } else if (nums[middle] < target) {
+                start = middle + 1;
+            } else {
+                end = middle - 1;
+            }
+        }
+        return -1;
+    }
+
     public static void main(String[] args) {
         BinarySearch binarySearch = new BinarySearch();
         System.out.print(binarySearch.binarySearch(new int[]{1,2,3,4,5,6,7,100}, 15));
@@ -168,5 +216,10 @@ public class BinarySearch {
         System.out.print(binarySearch.binarySearch(new int[]{15}, 15));
 
         System.out.print(binarySearch.lastPositionOfTarget(new int[]{1,2,2,4,5,5}, 2));
+//        System.out.print(BinarySearch.search(2, new int[]{-1,0,3,5,9,12}));
+        System.out.println(BinarySearch.findLastPositionOfTarget(new int[]{1, 2, 2, 4, 5, 5}, 2));
+        System.out.println(BinarySearch.findLastPositionOfTarget(new int[]{4}, 3));
+        System.out.println(BinarySearch.findLastPositionOfTarget(new int[]{1, 2, 2, 4, 5, 5}, 5));
+
     }
 }
