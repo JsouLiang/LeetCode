@@ -2,13 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Basic/BinarySearch/CopyBooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnionFind/ConnectingGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnionFind/ConnectingGraphII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnionFind/ConnectingGraphIII.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UnionFind/NumberOfIslandII.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/DynamicProgramming/leetcode/medium/LeetCode322.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/暴力搜索/LeetCode108.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/暴力搜索/LeetCode394.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/暴力搜索/LeetCode401.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/暴力搜索/LeetCode784.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LeetCode/tree/LeetCode/TreeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree/LeetCode/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UnionFind/NumberOfIslandII.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UnionFind/NumberOfIslandII.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -80,20 +82,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.NumberOfIslandII">
+  <component name="RunManager" selected="Application.LeetCode401">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BinarySearch" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.BinarySearch" />
+    <configuration name="LeetCode108" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="暴力搜索.LeetCode108" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.BinarySearch.*" />
+          <option name="PATTERN" value="暴力搜索.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,13 +103,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectingGraph" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UnionFind.ConnectingGraph" />
+    <configuration name="LeetCode322" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DynamicProgramming.leetcode.medium.LeetCode322" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UnionFind.*" />
+          <option name="PATTERN" value="DynamicProgramming.leetcode.medium.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,13 +117,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConnectingGraphII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UnionFind.ConnectingGraphII" />
+    <configuration name="LeetCode394" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="暴力搜索.LeetCode394" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UnionFind.*" />
+          <option name="PATTERN" value="暴力搜索.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,13 +131,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CopyBooks" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Basic.BinarySearch.CopyBooks" />
+    <configuration name="LeetCode401" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="暴力搜索.LeetCode401" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Basic.BinarySearch.*" />
+          <option name="PATTERN" value="暴力搜索.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,13 +145,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NumberOfIslandII" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="UnionFind.NumberOfIslandII" />
+    <configuration name="LeetCode784" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="暴力搜索.LeetCode784" />
       <module name="LeetCode" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="UnionFind.*" />
+          <option name="PATTERN" value="暴力搜索.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -214,19 +216,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BinarySearch" />
-      <item itemvalue="Application.CopyBooks" />
-      <item itemvalue="Application.ConnectingGraph" />
-      <item itemvalue="Application.ConnectingGraphII" />
-      <item itemvalue="Application.NumberOfIslandII" />
+      <item itemvalue="Application.LeetCode322" />
+      <item itemvalue="Application.LeetCode784" />
+      <item itemvalue="Application.LeetCode108" />
+      <item itemvalue="Application.LeetCode394" />
+      <item itemvalue="Application.LeetCode401" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.NumberOfIslandII" />
-        <item itemvalue="Application.ConnectingGraphII" />
-        <item itemvalue="Application.ConnectingGraph" />
-        <item itemvalue="Application.CopyBooks" />
-        <item itemvalue="Application.BinarySearch" />
+        <item itemvalue="Application.LeetCode401" />
+        <item itemvalue="Application.LeetCode394" />
+        <item itemvalue="Application.LeetCode108" />
+        <item itemvalue="Application.LeetCode784" />
+        <item itemvalue="Application.LeetCode322" />
       </list>
     </recent_temporary>
   </component>
@@ -311,7 +313,10 @@
       <workItem from="1572095795810" duration="3326000" />
       <workItem from="1572262841122" duration="6049000" />
       <workItem from="1572686673712" duration="3930000" />
-      <workItem from="1573972101060" duration="16489000" />
+      <workItem from="1573972101060" duration="29653000" />
+      <workItem from="1574237326547" duration="1366000" />
+      <workItem from="1574315964115" duration="3408000" />
+      <workItem from="1574339427268" duration="12770000" />
     </task>
     <servers />
   </component>
@@ -986,18 +991,38 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UnionFind/NumberOfIslandII.java</url>
-          <line>204</line>
+          <line>205</line>
           <option name="timeStamp" value="765" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UnionFind/NumberOfIslandII.java</url>
-          <line>192</line>
+          <line>193</line>
           <option name="timeStamp" value="787" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/UnionFind/NumberOfIslandII.java</url>
-          <line>180</line>
+          <line>181</line>
           <option name="timeStamp" value="789" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/暴力搜索/LeetCode784.java</url>
+          <line>32</line>
+          <option name="timeStamp" value="807" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/暴力搜索/LeetCode784.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="808" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/暴力搜索/LeetCode108.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="813" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/暴力搜索/LeetCode401.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="832" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -1011,6 +1036,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/LeetCode_Java$WoodCut.ic" NAME="WoodCut Coverage Results" MODIFIED="1572092392041" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Basic.BinarySearch.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/LeetCode_Java$LeetCode784.ic" NAME="LeetCode784 Coverage Results" MODIFIED="1574149630481" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>暴力搜索.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/LeetCode_Java$BinarySearch.ic" NAME="BinarySearch Coverage Results" MODIFIED="1565424899711" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>Basic.BinarySearch.*</FILTER>
