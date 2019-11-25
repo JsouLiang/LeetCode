@@ -8,7 +8,7 @@ import java.util.List;
  * 401. Binary Watch
  * Input: n = 1
  * Return: ["1:00", "2:00", "4:00", "8:00", "0:01", "0:02", "0:04", "0:08", "0:16", "0:32"]
- *
+ *https://blog.csdn.net/u014248127/article/details/53844748
  */
 public class LeetCode401 {
     private List<Integer> hour = Arrays.asList(
@@ -36,26 +36,27 @@ public class LeetCode401 {
         if (num == 0) {
             return new ArrayList<>();
         }
-        for (int i = 0; i < num; i++) {
-            List<Integer> hourNums = new ArrayList<>();
-            selectNumbers(i, 0, hour, hourNums);
-            List<Integer> minuteNums = new ArrayList<>();
-            selectNumbers(num - i, 0, minutes, minuteNums);
+        for (int i = 0; i <= num; i++) {
+            List<List<Integer>> hourNums = new ArrayList<>();
+            selectNumbers(i, hour, new ArrayList<>(), hourNums);
+            List<List<Integer>> minuteNums = new ArrayList<>();
+            selectNumbers(num - i,  minutes, new ArrayList<>(), minuteNums);
         }
         return null;
     }
 
-    private List<Integer> selectNumbers(int count, int index, List<Integer> target, List<Integer> res) {
-        if (index == count) {
-            return res;
+    private void selectNumbers(int count, List<Integer> target, List<Integer> selectedNum, List<List<Integer>> res) {
+        if (selectedNum.size() == count) {
+            res.add(selectedNum);
+            return;
         }
+
         for (int i = 0; i < target.size(); i++) {
             Integer value = target.get(i);
-            res.add(value);
-            selectNumbers(count, index+1, target, res);
-            res.remove(res.size() - 1);
+            selectedNum.add(value);
+            selectNumbers(count, target,selectedNum, res);
+            selectedNum.remove(res.size() - 1);
         }
-        return res;
     }
 
     public static void main(String[] args) {
