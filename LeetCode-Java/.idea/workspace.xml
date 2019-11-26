@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7815d39c-8da9-45e1-ae77-2aa1a212f286" name="Default" comment="二叉搜索树-BinarySearchTree 数据结构">
-      <change afterPath="$PROJECT_DIR$/src/暴力搜索/LeetCode733.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/暴力搜索/LeetCode401.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/暴力搜索/LeetCode401.java" afterDir="false" />
     </list>
@@ -76,7 +75,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.LeetCode733">
+  <component name="RunManager" selected="Application.LeetCode401">
     <configuration default="true" type="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
       <method v="2">
@@ -218,8 +217,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.LeetCode733" />
         <item itemvalue="Application.LeetCode401" />
+        <item itemvalue="Application.LeetCode733" />
         <item itemvalue="Application.LeetCode394" />
         <item itemvalue="Application.LeetCode108" />
         <item itemvalue="Application.LeetCode784" />
@@ -312,6 +311,7 @@
       <workItem from="1574315964115" duration="3408000" />
       <workItem from="1574339427268" duration="12770000" />
       <workItem from="1574584360301" duration="3209000" />
+      <workItem from="1574695066135" duration="5457000" />
     </task>
     <servers />
   </component>
@@ -1013,6 +1013,11 @@
           <url>file://$PROJECT_DIR$/src/暴力搜索/LeetCode108.java</url>
           <line>25</line>
           <option name="timeStamp" value="813" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/暴力搜索/LeetCode401.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="835" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
