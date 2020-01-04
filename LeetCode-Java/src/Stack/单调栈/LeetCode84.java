@@ -1,5 +1,10 @@
 package Stack.单调栈;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+import java.util.Stack;
+
 /**
  * 84. 柱状图中最大的矩形
  * 给定 n 个非负整数，用来表示柱状图中各个柱子的高度。每个柱子彼此相邻，且宽度为 1 。
@@ -12,8 +17,41 @@ package Stack.单调栈;
  * 输入: [2,1,5,6,2,3]
  * 输出: 10
  *
- * 链接：https://leetcode-cn.com/problems/largest-rectangle-in-histogram
  */
 
 public class LeetCode84 {
+    public int largestRectangleArea(int[] heights) {
+        if (heights == null || heights.length == 0) {
+            return 0;
+        }
+        int[] newHeight = new int[heights.length + 1];
+        for (int i = 0; i < heights.length; i++) {
+            newHeight[i] = heights[i];
+        }
+        newHeight[heights.length] = 0;
+
+        Stack<Integer> increaseStack = new Stack<>();
+        int size = 0;
+        for (int i = 0; i < newHeight.length; i++) {
+            while (!increaseStack.isEmpty() && newHeight[increaseStack.peek()] > newHeight[i]) {
+                int popedIndex = increaseStack.pop();
+                int currentHeight = newHeight[popedIndex];
+                int width = i - popedIndex;
+
+
+                int currentSize = currentHeight * width;
+                size = Math.max(currentSize, size);
+            }
+            increaseStack.push(i);
+        }
+        return size;
+    }
+
+    public static void main(String[] args) {
+        LeetCode84 leetCode84 = new LeetCode84();
+        leetCode84.largestRectangleArea(new int[]{2, 1, 2});
+
+        leetCode84.largestRectangleArea(new int[]{2});
+        leetCode84.largestRectangleArea(new int[]{2,1,5,6,2,3});
+    }
 }
