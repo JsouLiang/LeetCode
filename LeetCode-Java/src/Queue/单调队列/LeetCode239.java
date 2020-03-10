@@ -1,9 +1,8 @@
 package Queue.单调队列;
 
-import java.util.ArrayDeque;
-import java.util.ArrayList;
-import java.util.Deque;
-import java.util.Queue;
+import Link.leetcode.medium.LeetCode2;
+
+import java.util.*;
 
 /**
  * 239. 滑动窗口最大值
@@ -42,6 +41,7 @@ public class LeetCode239 {
         /// 如果元素 大于队尾元素则将队尾元素出队，再将新元素入队
         Deque<Integer> queue = new ArrayDeque<>();
 
+        /// 结果数组的长度为：原数组长度 - 可以作为滑动窗口头元素的个数( k - 1 )
         int[] result = new int[nums.length - k + 1];
 
         for (int index = 0; index < nums.length; index++) {
@@ -71,8 +71,34 @@ public class LeetCode239 {
         return result;
     }
 
+    public int[] maxSlidingWindowII(int[] nums, int k) {
+        if (nums == null || nums.length == 0 || k == 1) {
+            return nums;
+        }
+        int[] res = new int[nums.length - k + 1];
+        /// queue first 是当前滑动窗口中最大元素
+        Deque<Integer> maxQueue = new ArrayDeque<>();
+        int resIndex = 0;
+        for (int index = 0; index < nums.length; index++) {
+            if (!maxQueue.isEmpty() && index - maxQueue.peekFirst() >= k) {
+                maxQueue.pollFirst();
+            }
+            while (!maxQueue.isEmpty() && nums[index] > nums[maxQueue.getLast()]) {
+                maxQueue.pollLast();
+            }
+            maxQueue.offerLast(index);
+            if (index >= k - 1) {
+                res[resIndex++] = nums[maxQueue.peekFirst()];
+            }
+        }
+        return res;
+    }
+
     public static void main(String[] args) {
         LeetCode239.maxSlidingWindow(new int[]{1,3,-1,-3,5,3,6,7}, 3);
         LeetCode239.maxSlidingWindow(new int[]{7,2,4}, 2);
+
+        LeetCode239 leetCode239 = new LeetCode239();
+        leetCode239.maxSlidingWindowII(new int[]{1,3,-1,-3,5,3,6,7}, 3);
     }
 }

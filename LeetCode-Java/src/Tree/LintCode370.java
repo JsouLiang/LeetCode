@@ -35,10 +35,11 @@ public class LintCode370 {
                 reversePolishExp.add(currentToken);
                 continue;
             }
-            ///
+            /// 左括号直接入栈
             if (currentToken.contentEquals("(")) {
                 increaseStack.push(currentToken);
             } else {
+                /// 如果递增栈非空，并且栈顶元素的优先级 > 当前元素，出栈，直到栈顶元素优先级 < 当前元素
                 while (!increaseStack.isEmpty() && priorityCheck(increaseStack.peek(), currentToken) >= 0) {
                     String peekToken = increaseStack.pop();
                     if (peekToken.contentEquals("(")) {
@@ -58,6 +59,9 @@ public class LintCode370 {
         return reversePolishExp;
     }
 
+    /**
+     * 比较 toke1 和 token2 的优先级
+     */
     private int priorityCheck(String token1, String token2) {
         return priorityOfToken(token1) - priorityOfToken(token2);
     }
@@ -65,14 +69,15 @@ public class LintCode370 {
     private int priorityOfToken(String token) {
         switch (token) {
             case ")":
-            case "(":
                 return 0;
+            case "(":
+                return 1;
             case "+":
             case "-":
-                return 1;
+                return 2;
             case "*":
             case "/":
-                return 2;
+                return 3;
         }
         return 0;
     }
@@ -88,11 +93,12 @@ public class LintCode370 {
 
     public static void main(String[] args) {
         LintCode370 lintCode370 = new LintCode370();
-        lintCode370.convertToRPN(new String[]{"3", "-", "4", "+", "5"});
-        lintCode370.convertToRPN(new String[]{"(", "5", "-", "6", ")", "*", "7"});
+        List<String> res = lintCode370.convertToRPN(new String[]{"3", "-", "4", "+", "5"});
+        res = lintCode370.convertToRPN(new String[]{"(", "5", "-", "6", ")", "*", "7"});
         /// 15 7 1 1 + − ÷ 3 × 2 1 1 + + −
-        lintCode370.convertToRPN(new String[]{"(", "(", "15", "/", "(", "7", "-", "(", "1", "+", "1", ")", ")", ")", "*", "3", ")", "-", "(", "2", "+", "(", "1", "+", "1", ")", ")"});
-        lintCode370.convertToRPN(new String[]{"2","*","6","-","(","23","+","7",")","/","(","1","+","2",")"});
+        /// ((15 ÷ (7 − (1 + 1))) × 3) − (2 + (1 + 1))
+         res = lintCode370.convertToRPN(new String[]{"(", "(", "15", "/", "(", "7", "-", "(", "1", "+", "1", ")", ")", ")", "*", "3", ")", "-", "(", "2", "+", "(", "1", "+", "1", ")", ")"});
+        res = lintCode370.convertToRPN(new String[]{"2","*","6","-","(","23","+","7",")","/","(","1","+","2",")"});
 
     }
 }

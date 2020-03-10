@@ -21,6 +21,32 @@ package DynamicProgramming.leetcode.easy;
  * 解释: 在这种情况下, 没有交易完成, 所以最大利润为 0。
  */
 public class LeetCode121 {
+
+    public int maxProfitII(int[] prices) {
+        if (prices == null || prices.length == 0) {
+            return 0;
+        }
+        int[][] dp = new int[prices.length][2];
+        /// 第1天，不持有股票
+        dp[0][0] = 0;
+        /// 第1天，持有股票，此时利润为-prices[0]
+        dp[0][1] = -prices[0];
+        for (int i = 1; i < prices.length; i++) {
+            /// 第 i + 1 天，不持有股票
+            /// 第 i + 1 天不持有股票，那么 i+1天的最大利润
+            /// 1. i 天没持有股票，第 i+1天也不持有股票
+            /// 2. i 天持有股票，第 i+1 天把股票卖出去
+            dp[i][0] = Math.max(dp[i - 1][0], dp[i - 1][1] + prices[i]);
+            /// 第 i + 1 天，持有股票
+            /// 第 i + 1 天持有股票，那么 i+1天的最大利润
+            /// 1. i 天持有股票，第 i+1天不操作，继续持有股票
+            /// 2. i 天持没有股票，第 i+1 天把股票买进
+            dp[i][1] = Math.max(dp[i - 1][1], -prices[i]);
+        }
+        /// 最后一天不持有股票应该是最大的收益
+        return dp[prices.length - 1][0];
+    }
+
     // TODO:
     public int maxProfit(int[] prices) {
         int[] leastd = new int[prices.length];
@@ -46,6 +72,6 @@ public class LeetCode121 {
     public static void main(String[] args) {
         LeetCode121 LeetCode121 = new LeetCode121();
 //        leetCode746.minCostClimbingStairsII(new int[]{1, 100, 1, 1, 1, 100, 1, 1, 100, 1});
-        LeetCode121.maxProfit(new int[]{7,1,5,3,6,4});
+        LeetCode121.maxProfitII(new int[]{7,1,5,3,6,4});
     }
 }

@@ -25,10 +25,31 @@ public class LeetCode206 {
         }
         return newNextNode;
     }
+
+    ListNode reverseListII(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        return help(head);
+    }
+
+    private ListNode help(ListNode head) {
+        if (head.next == null) {
+            return head;
+        }
+        ListNode newHead = help(head.next);
+        head.next.next = head;
+        head.next = null;
+        return newHead;
+    }
+
     // TODO: 递归解法
     public static void main(String[] args) {
         ListNode listNode = ListNode.createWithNums(new int[]{1,2,3,4,5});
-        LeetCode206.reverseList(listNode);
+//        LeetCode206.reverseList(listNode);
+
+        LeetCode206 leetCode206 = new LeetCode206();
+        leetCode206.reverseListII(listNode);
 
     }
 }
