@@ -23,76 +23,92 @@ public class LeetCode490 {
 
     private boolean[][] visited;
     private int[] destionation;
+    private List<int[]> path;
 
     public boolean hasPath(int[][] maze, int[] start, int[] destination) {
         this.destionation = destination;
         visited = new boolean[maze.length][maze[0].length];
-        visited[start[0]][start[1]] = true;
+        path = new ArrayList<>();
         boolean res = helper(maze, start[0], start[1]);
         return res;
     }
 
     private boolean helper(int[][] maze, int x, int y) {
-        for (int i = 0; i < direct.length - 1; i++) {
-            int deltaX = direct[i];
-            int nextX = x + deltaX;
-            int deltaY = direct[i + 1];
-            int nexY = y + deltaY;
-            if (nextX >= 0 && nexY >= 0 && nextX < maze.length && nexY < maze[0].length && maze[nextX][nexY] != 1) {
-                Direction direction;
-                if (deltaX > 0) {
-                    direction = Direction.right;
-                } else if (deltaX < 0) {
-                    direction = Direction.left;
-                } else if (deltaY > 0) {
-                    direction = Direction.down;
-                } else {
-                    direction = Direction.up;
-                }
-                return dfsWidthDirection(maze, nextX, nexY, direction);
-            }
+        if (visited[x][y]) {
+            return false;
+        }
+        if (x == destionation[0] && y == destionation[1]) {
+            return true;
+        }
+        visited[x][y] = true;
+        int right = y + 1, left = y - 1, up = x - 1, down = x + 1;
+        /// 下一个点，一直向右直到碰到墙壁
+        while (right < maze[0].length &&  maze[x][right] == 0) {
+            right++;
+        }
+        if (helper(maze, x, right - 1)) {
+            return true;
+        }
+        /// 向左走
+        while ( left >= 0 && maze[x][left] == 0) {
+            left--;
+        }
+        if (helper(maze, x, left + 1)) {
+            return true;
+        }
+        /// 向下走
+        while (down < maze.length && maze[down][y] == 0) {
+            down++;
+        }
+        if (helper(maze, down - 1, y)) {
+            return true;
+        }
+        /// 向上走
+        while (up >= 0 && maze[up][y] == 0) {
+            up--;
+        }
+        if (helper(maze, up + 1, y)) {
+            return true;
         }
         return false;
     }
 
     private boolean dfsWidthDirection(int[][] maze, int x, int y, Direction direction) {
-        if (x == destionation[0] && y == destionation[1]) {
-            return true;
-        }
+        path.add(new int[]{x, y});
         int nextX = x;
         int nextY = y;
         boolean checkDirection = false;
         List<Integer[]> directions = new ArrayList<>();
         switch (direction) {
             case left:
-                nextX = x - 1;
+                nextY = y - 1;
                 /// 向左走是墙
-                if (nextX < 0 || maze[nextX][y] == 1) {
+                if (nextY < 0 || maze[x][nextY] == 1) {
                     checkDirection = true;
                     directions.add(new Integer[]{1, 0});
                     directions.add(new Integer[]{0, 1});
                     directions.add(new Integer[]{0, -1});
                 }
             case right:
-                nextX = x + 1;
-                if (nextX >= maze[0].length || maze[nextX][y] == 1) {
+                nextY = y + 1;
+                if (nextY >= maze[0].length || maze[x][nextY] == 1) {
                     checkDirection = true;
                     directions.add(new Integer[]{-1, 0});
                     directions.add(new Integer[]{0, 1});
                     directions.add(new Integer[]{0, -1});
                 }
             case up:
-                nextY = y - 1;
+                nextX = x - 1;
                 /// up is wall
-                if (nextY < 0 || maze[x][nextY] == 1) {
+                if (nextX < 0 || maze[nextX][y] == 1) {
                     checkDirection = true;
                     directions.add(new Integer[]{-1, 0});
                     directions.add(new Integer[]{1, 0});
                     directions.add(new Integer[]{0, 1});
                 }
             case down:
-                nextY = y + 1;
-                if (nextY >= maze.length || maze[x][nextY] == 1) {
+                nextX = x + 1;
+                if (nextX >= maze.length || maze[nextX][y] == 1) {
                     checkDirection = true;
 
                     directions.add(new Integer[]{-1, 0});
@@ -101,27 +117,30 @@ public class LeetCode490 {
                 }
         }
 
+        if (x == destionation[0] && y == destionation[1] && maze[nextX][nextY] == 1) {
+            return true;
+        }
         if (!checkDirection) {
             return dfsWidthDirection(maze, nextX, nextY, direction);
         } else {
             for (Integer[] nextDirectionDelta : directions) {
                 Direction nextDirection = direction;
                 if (nextDirectionDelta[0] == 1) {
-                    nextDirection = Direction.right;
-                }else if (nextDirectionDelta[0] == -1) {
-                    nextDirection = Direction.left;
-                } else if (nextDirectionDelta[1] == 1) {
-                    nextDirection = Direction.up;
-                } else if (nextDirectionDelta[1] == -1) {
                     nextDirection = Direction.down;
+                }else if (nextDirectionDelta[0] == -1) {
+                    nextDirection = Direction.up;
+                } else if (nextDirectionDelta[1] == 1) {
+                    nextDirection = Direction.right;
+                } else if (nextDirectionDelta[1] == -1) {
+                    nextDirection = Direction.left;
                 }
                 nextX = x + nextDirectionDelta[0];
                 nextY = y + nextDirectionDelta[1];
-                if (!visited[nextX][nextY]) {
+                if (nextX >= 0 && nextY >= 0 && nextX < maze.length && nextY < maze[0].length && !visited[nextX][nextY]) {
                     visited[nextX][nextY] = true;
                     boolean res = dfsWidthDirection(maze, nextX, nextY, nextDirection);
                     if (!res) {
-                        visited[nextX][nextY] = false;
+                        path.remove(path.size() - 1);
                     } else {
                         return true;
                     }
@@ -134,6 +153,12 @@ public class LeetCode490 {
 
     public static void main(String[] args) {
         LeetCode490 leetCode490 = new LeetCode490();
-        leetCode490.hasPath(new int[][]{{0, 0, 1, 0, 0}, {0, 0, 0, 0, 0}, {0, 0, 0, 1, 0}, {1, 1, 0, 1, 1}, {0, 0, 0, 0, 0}}, new int[]{0, 4}, new int[]{3, 2});
+        leetCode490.hasPath(new int[][]{
+                {0, 0, 1, 0, 0},
+                {0, 0, 0, 0, 0},
+                {0, 0, 0, 1, 0},
+                {1, 1, 0, 1, 1},
+                {0, 0, 0, 0, 0}},
+                new int[]{0, 4}, new int[]{4, 4});
     }
 }
