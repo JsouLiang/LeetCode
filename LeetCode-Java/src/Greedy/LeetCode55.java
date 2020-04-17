@@ -1,4 +1,4 @@
-package Greed;
+package Greedy;
 
 /**
  * 55. 跳跃游戏
@@ -22,6 +22,7 @@ package Greed;
  */
 public class LeetCode55 {
     /**
+     * TODO:
      * 从每个点计算当前点可以达到的最大位置，不断遍历数组更新该最大位置，
      * 当到数组结尾时，判断该最大是否 > 数组长度
      * @param nums
@@ -40,6 +41,21 @@ public class LeetCode55 {
             return true;
         }
         return false;
+    }
+
+    public boolean canJumpII(int[] nums) {
+        int maxPosition = 0;
+        int index = 0;
+        while (index < nums.length) {
+            /// 目前可达的最远位置在当前位置之前
+            if (maxPosition < index) {
+                return false;
+            }
+            /// 更新目前可达的最远位置
+            maxPosition = Math.max(maxPosition, nums[index] + index);
+            index++;
+        }
+        return true;
     }
 
     public boolean canJumpWithRecall(int[] nums) {
