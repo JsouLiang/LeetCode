@@ -8,5 +8,6 @@
 
 import Foundation
 
-print("Hello, World!")
 
+let leetCode3 = LeetCode3()
+leetCode3.lengthOfLongestSubstring("pwwwh")

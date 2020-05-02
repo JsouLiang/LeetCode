@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		ECF5A422245C122F0094259B /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5A421245C122F0094259B /* main.swift */; };
+		ECF5A42B245C12650094259B /* LeetCode21.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5A42A245C12650094259B /* LeetCode21.swift */; };
+		ECF5A42D245C12800094259B /* ListNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5A42C245C12800094259B /* ListNode.swift */; };
+		ECF5A435245C18800094259B /* LeetCode21.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5A434245C18800094259B /* LeetCode21.swift */; };
+		ECF5A44A245D06440094259B /* LeetCode3.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECF5A449245D06440094259B /* LeetCode3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +29,31 @@
 /* Begin PBXFileReference section */
 		ECF5A41E245C122F0094259B /* LeetCode-Swift */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "LeetCode-Swift"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECF5A421245C122F0094259B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		ECF5A42A245C12650094259B /* LeetCode21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode21.swift; sourceTree = "<group>"; };
+		ECF5A42C245C12800094259B /* ListNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListNode.swift; sourceTree = "<group>"; };
+		ECF5A432245C18800094259B /* LeetCode-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "LeetCode-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF5A434245C18800094259B /* LeetCode21.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode21.swift; sourceTree = "<group>"; };
+		ECF5A436245C18800094259B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECF5A440245D05F10094259B /* LeetCodeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LeetCodeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECF5A449245D06440094259B /* LeetCode3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeetCode3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		ECF5A41B245C122F0094259B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5A42F245C18800094259B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5A43D245D05F10094259B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -42,6 +67,7 @@
 			isa = PBXGroup;
 			children = (
 				ECF5A420245C122F0094259B /* LeetCode-Swift */,
+				ECF5A433245C18800094259B /* LeetCode-SwiftTests */,
 				ECF5A41F245C122F0094259B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -50,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				ECF5A41E245C122F0094259B /* LeetCode-Swift */,
+				ECF5A432245C18800094259B /* LeetCode-SwiftTests.xctest */,
+				ECF5A440245D05F10094259B /* LeetCodeTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +85,69 @@
 		ECF5A420245C122F0094259B /* LeetCode-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				ECF5A44B245D0E8A0094259B /* Utils */,
+				ECF5A448245D06350094259B /* DoublePoint */,
+				ECF5A428245C12400094259B /* Base Data Struct */,
 				ECF5A421245C122F0094259B /* main.swift */,
 			);
 			path = "LeetCode-Swift";
+			sourceTree = "<group>";
+		};
+		ECF5A428245C12400094259B /* Base Data Struct */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5A429245C12510094259B /* Link */,
+			);
+			path = "Base Data Struct";
+			sourceTree = "<group>";
+		};
+		ECF5A429245C12510094259B /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5A42A245C12650094259B /* LeetCode21.swift */,
+				ECF5A42C245C12800094259B /* ListNode.swift */,
+			);
+			path = Link;
+			sourceTree = "<group>";
+		};
+		ECF5A433245C18800094259B /* LeetCode-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5A43A245C189A0094259B /* Base Data Struct */,
+				ECF5A436245C18800094259B /* Info.plist */,
+			);
+			path = "LeetCode-SwiftTests";
+			sourceTree = "<group>";
+		};
+		ECF5A43A245C189A0094259B /* Base Data Struct */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5A43B245C18A00094259B /* Link */,
+			);
+			path = "Base Data Struct";
+			sourceTree = "<group>";
+		};
+		ECF5A43B245C18A00094259B /* Link */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5A434245C18800094259B /* LeetCode21.swift */,
+			);
+			path = Link;
+			sourceTree = "<group>";
+		};
+		ECF5A448245D06350094259B /* DoublePoint */ = {
+			isa = PBXGroup;
+			children = (
+				ECF5A449245D06440094259B /* LeetCode3.swift */,
+			);
+			path = DoublePoint;
+			sourceTree = "<group>";
+		};
+		ECF5A44B245D0E8A0094259B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +170,40 @@
 			productReference = ECF5A41E245C122F0094259B /* LeetCode-Swift */;
 			productType = "com.apple.product-type.tool";
 		};
+		ECF5A431245C18800094259B /* LeetCode-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF5A437245C18800094259B /* Build configuration list for PBXNativeTarget "LeetCode-SwiftTests" */;
+			buildPhases = (
+				ECF5A42E245C18800094259B /* Sources */,
+				ECF5A42F245C18800094259B /* Frameworks */,
+				ECF5A430245C18800094259B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "LeetCode-SwiftTests";
+			productName = "LeetCode-SwiftTests";
+			productReference = ECF5A432245C18800094259B /* LeetCode-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ECF5A43F245D05F10094259B /* LeetCodeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ECF5A445245D05F10094259B /* Build configuration list for PBXNativeTarget "LeetCodeTests" */;
+			buildPhases = (
+				ECF5A43C245D05F10094259B /* Sources */,
+				ECF5A43D245D05F10094259B /* Frameworks */,
+				ECF5A43E245D05F10094259B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LeetCodeTests;
+			productName = LeetCodeTests;
+			productReference = ECF5A440245D05F10094259B /* LeetCodeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +215,12 @@
 				ORGANIZATIONNAME = imieutan;
 				TargetAttributes = {
 					ECF5A41D245C122F0094259B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					ECF5A431245C18800094259B = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
+					ECF5A43F245D05F10094259B = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
 				};
@@ -111,9 +239,28 @@
 			projectRoot = "";
 			targets = (
 				ECF5A41D245C122F0094259B /* LeetCode-Swift */,
+				ECF5A431245C18800094259B /* LeetCode-SwiftTests */,
+				ECF5A43F245D05F10094259B /* LeetCodeTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ECF5A430245C18800094259B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5A43E245D05F10094259B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		ECF5A41A245C122F0094259B /* Sources */ = {
@@ -121,6 +268,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECF5A422245C122F0094259B /* main.swift in Sources */,
+				ECF5A42B245C12650094259B /* LeetCode21.swift in Sources */,
+				ECF5A44A245D06440094259B /* LeetCode3.swift in Sources */,
+				ECF5A42D245C12800094259B /* ListNode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5A42E245C18800094259B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF5A435245C18800094259B /* LeetCode21.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ECF5A43C245D05F10094259B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +423,74 @@
 			};
 			name = Release;
 		};
+		ECF5A438245C18800094259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "LeetCode-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imietuan.LeetCode-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ECF5A439245C18800094259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = "LeetCode-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.imietuan.LeetCode-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		ECF5A446245D05F10094259B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LeetCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imietuan.LeetCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		ECF5A447245D05F10094259B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = LeetCodeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.imietuan.LeetCodeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -275,6 +508,24 @@
 			buildConfigurations = (
 				ECF5A426245C122F0094259B /* Debug */,
 				ECF5A427245C122F0094259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF5A437245C18800094259B /* Build configuration list for PBXNativeTarget "LeetCode-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF5A438245C18800094259B /* Debug */,
+				ECF5A439245C18800094259B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ECF5A445245D05F10094259B /* Build configuration list for PBXNativeTarget "LeetCodeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ECF5A446245D05F10094259B /* Debug */,
+				ECF5A447245D05F10094259B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
