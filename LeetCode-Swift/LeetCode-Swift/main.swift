@@ -9,5 +9,5 @@
 import Foundation
 
 
-let leetCode3 = LeetCode3()
-leetCode3.lengthOfLongestSubstring("pwwwh")
+let leetcode53 = LeetCode53()
+leetcode53.maxSubArray([-1])
