@@ -20,5 +20,8 @@ import Foundation
 //let leetcode05 = LeetCode05()
 //leetcode05.longestPalindrome("cbbd")
 
-let leetCode105 = LeetCode105()
-leetCode105.buildTree([1, 2], [1, 2])
+//let leetCode105 = LeetCode105()
+//leetCode105.buildTree([1, 2], [1, 2])
+
+let leetcode76 = LeetCode76()
+leetcode76.minWindow("AA", "AA")
