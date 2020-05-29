@@ -23,5 +23,11 @@ import Foundation
 //let leetCode105 = LeetCode105()
 //leetCode105.buildTree([1, 2], [1, 2])
 
-let leetcode76 = LeetCode76()
-leetcode76.minWindow("AA", "AA")
+//let leetcode76 = LeetCode76()
+//leetcode76.minWindow("AA", "AA")
+
+//let decodeStr = DecodeString()
+//decodeStr.decodeString("100[L]")
+
+let solution = LeetCode198()
+solution.rob([2,7,9,3,1])
