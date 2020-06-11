@@ -29,5 +29,14 @@ import Foundation
 //let decodeStr = DecodeString()
 //decodeStr.decodeString("100[L]")
 
-let solution = LeetCode198()
-solution.rob([2,7,9,3,1])
+//let solution = LeetCode198()
+//solution.rob([2,7,9,3,1])
+
+//let solution = LeetCode84()
+//solution.largestRectangleArea([1, 2, 3, 4, 5])
+
+//let soulution = LeetCode09()
+//soulution.isPalindrome(121)
+
+let soultion = LeetCode739()
+soultion.dailyTemperatures([73, 74, 75, 71, 76, 69, 72, 73])
