@@ -17,6 +17,7 @@ package SlidingWindowDoublePoint.LeetCode.easy;
  */
 public class LeetCode125 {
     public static boolean isPalindrome(String s) {
+
         if (s.length() == 0) {
             return true;
         }
@@ -52,7 +53,7 @@ public class LeetCode125 {
     }
 
     public static void main(String[] args) {
-        boolean isEqual = LeetCode125.isPalindrome("A man, a plan, a canal: Panama");
+        boolean isEqual = LeetCode125.isPalindrome("0P");
         isEqual = LeetCode125.isPalindrome("race a car");
         isEqual = LeetCode125.isPalindrome(".,");
         isEqual = LeetCode125.isPalindrome("abba.,");

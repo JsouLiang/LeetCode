@@ -67,7 +67,7 @@ public class LeetCode32 {
 
     public static void main(String[] args) {
         LeetCode32 test = new LeetCode32();
-        int result = test.longestValidParentheses("(()");
+        int result = test.longestValidParentheses("(((()))");
         result = test.longestValidParentheses(")()()");
     }
 }

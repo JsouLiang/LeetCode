@@ -66,8 +66,8 @@ public class LeetCode153 {
     }
 
     public static void main(String[] args) {
-        LeetCode153.findMineUseFirst(new int[]{2, 1});
-        LeetCode153.findMinUseLast(new int[]{1, 2, 3, 4, 5, 6});
+//        LeetCode153.findMineUseFirst(new int[]{2, 1});
+//        LeetCode153.findMinUseLast(new int[]{1, 2, 3, 4, 5, 6});
         LeetCode153.findMineUseFirst(new int[]{3, 4, 5, 1, 2});
         LeetCode153.findMineUseFirst(new int[]{ 7, 6, 5,4,2,1});
         LeetCode153.findMinUseLast(new int[]{ 4, 5, 6, 7, 0,  1, 2});

@@ -1,7 +1,6 @@
 package Tree.LeetCode;
 
-import Basic.LeetCode9;
-
+import javax.swing.plaf.IconUIResource;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -82,21 +81,47 @@ public class LeetCode14 {
         return trie.getLongestCommonPrefix();
     }
 
+    public String solutionII(String[] strs) {
+        List<char[]> strChars = new ArrayList<>();
+
+        for (String str: strs) {
+            strChars.add(str.toCharArray());
+        }
+        int index = 0;
+        while (true) {
+            if (index >= strChars.get(0).length) {
+                return strs[0].substring(0, index);
+            }
+            char currentFirstChar = strChars.get(0)[index];
+            for (int i = 1; i < strChars.size(); i++) {
+                char[] currentStr = strChars.get(i);
+                if (index >= currentStr.length) {
+                    return strs[0].substring(0, index);
+                }
+                char currentChar = currentStr[index];
+                if (currentChar != currentFirstChar) {
+                    return strs[0].substring(0, index);
+                }
+            }
+            index++;
+        }
+    }
+
     public static void main(String[] args) {
         LeetCode14 leetCode14 = new LeetCode14();
-        leetCode14.longestCommonPrefix(new String[]{
+        String res = leetCode14.solutionII(new String[]{
                 "aa","a"
         });
-        leetCode14.longestCommonPrefix(new String[]{
+        res = leetCode14.solutionII(new String[]{
                 "a","aa"
         });
-        leetCode14.longestCommonPrefix(new String[]{
+        res = leetCode14.solutionII(new String[]{
                 "","flow","flight"
         });
-        leetCode14.longestCommonPrefix(new String[]{
+        res = leetCode14.solutionII(new String[]{
                 "flower","flow","flight"
         });
-        leetCode14.longestCommonPrefix(new String[]{
+        res = leetCode14.solutionII(new String[]{
                 "dog","racecar","car"
         });
     }

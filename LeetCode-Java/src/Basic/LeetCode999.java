@@ -1,4 +1,4 @@
-package DFS;
+package Basic;
 
 /**
  * 999. 车的可用捕获量

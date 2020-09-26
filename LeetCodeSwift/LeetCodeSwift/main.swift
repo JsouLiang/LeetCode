@@ -38,5 +38,25 @@ import Foundation
 //let soulution = LeetCode09()
 //soulution.isPalindrome(121)
 
-let soultion = LeetCode739()
-soultion.dailyTemperatures([73, 74, 75, 71, 76, 69, 72, 73])
+//let soultion = LeetCode739()
+//soultion.dailyTemperatures([73, 74, 75, 71, 76, 69, 72, 73])
+
+//let solution = LeetCode15()
+//solution.threeSum([-1, 0, 1, 2, -1, -4])
+
+//let soultion = LeetCode70()
+//soultion.climbStairs(2)
+
+//let solution = LeetCode14()
+//solution.longestCommonPrefix([
+//    "flower","flow","flight"
+//])
+
+//let solution = LeetCode125()
+//solution.isPalindrome("A man, a plan, a canal: Panama")
+
+//let solution = LeetCode16()
+//solution.threeSumClosest([-1, 2, 1, -4], 1);
+
+let solution = LeetCode209()
+solution.minSubArrayLen(7, [2, 3, 1, 2, 4, 3])
